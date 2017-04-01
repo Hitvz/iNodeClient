@@ -5,11 +5,13 @@ this is just share the iNodeClient and it adatper deepin &amp; ubuntu with shell
 
  暂时验证能使用的linux发行版有  
  
- deepin 15.1 、15.2、15.3
+ deepin 15.1 、15.2、15.3  
+ 
  ubuntu 16.04
  
  由于15.4之后（含15.4）就不会出32位的系统，同时体验了15.4的时候发现GTP相关的32包，大部分是找不到的，巧合下，找到了一个64位iNodeClient，已经编写sehll脚本适配了如下了linux发行版：  
  
- deepin 15.4rc
+ deepin 15.4rc  
+ 
  ubuntu 16.04
  
