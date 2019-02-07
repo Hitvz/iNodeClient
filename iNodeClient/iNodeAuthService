@@ -1,0 +1,169 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          iNodeAuthService
+# Required-Start:    $local_fs $network
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: iNodeAuthService
+# Description:       iNodeAuthService
+### END INIT INFO
+
+#
+# Startup script for iNodeAuthService
+#
+# chkconfig: - 80 01
+# description: iNodeAuthService
+# processname: iNodeAuthService
+# pidfile: /var/run/AuthenMngService.pid
+# config: /etc/iNode/iNode.conf
+
+INODE_CFG="/etc/iNode/inodesys.conf"
+
+#[ -r "$INODE_CFG" ] && . "${INODE_CFG}"
+if [ -r "$INODE_CFG" ];then
+    LINE=`cat $INODE_CFG`
+    INSTALL_DIR=${LINE##*INSTALL_DIR=}
+fi
+
+
+# if INSTALL_DIR is not set, exit
+if [ -z "$INSTALL_DIR" ]; then
+    echo INSTALL_DIR not set yet
+    exit 1
+fi
+
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH;$INSTALL_DIR/libs";export LD_LIBRARY_PATH
+
+RETVAL=0
+
+# See how we were called.
+start() {
+    echo -n "Starting AuthenMngService: "
+    
+    SELINUX_FLAG=`getenforce 2>/dev/null | grep -x -i enforcing`
+    if [ "$SELINUX_FLAG" != "" ]
+    then
+        chcon -t textrel_shlib_t /usr/lib/libInodeUtility.so
+        chcon -t textrel_shlib_t /usr/lib/libInodePortalPt.so
+        chcon -t textrel_shlib_t /usr/lib/libInodeX1Pt.so
+        chcon -t textrel_shlib_t /usr/lib/libInodeSecurityAuth.so
+        chcon -t textrel_shlib_t /usr/lib/libCoreUtils.so
+        chcon -t textrel_shlib_t /usr/lib/libImplAv.so
+        chcon -t textrel_shlib_t /usr/lib/libOesisCore.so
+    fi
+
+    IfExist=`ps awx -o command|awk -F/ '{print $NF}'|grep -x AuthenMngService`
+    if [ "$IfExist" != "" ]
+    then
+        echo "AuthenMngService already running"
+    else
+        "$INSTALL_DIR/AuthenMngService" &
+        echo OK
+    fi
+    
+    IfExist=`ps awx -o command|awk -F/ '{print $NF}'|grep -x iNodeMon`
+    if [ "$IfExist" = "" ]
+    then
+        sleep 5
+        "$INSTALL_DIR/iNodeMon" &
+    fi
+    
+    touch /var/lock/subsys/iNodeAuthService
+}
+
+stop() {
+    echo -n "Stopping AuthenMngService: "
+    
+    SELINUX_FLAG=`getenforce 2>/dev/null | grep -x -i enforcing`
+    if [ "$SELINUX_FLAG" != "" ]
+    then
+        chcon -t textrel_shlib_t /usr/lib/libInodeUtility.so
+        chcon -t textrel_shlib_t /usr/lib/libInodePortalPt.so
+        chcon -t textrel_shlib_t /usr/lib/libInodeX1Pt.so
+        chcon -t textrel_shlib_t /usr/lib/libInodeSecurityAuth.so
+        chcon -t textrel_shlib_t /usr/lib/libCoreUtils.so
+        chcon -t textrel_shlib_t /usr/lib/libImplAv.so
+        chcon -t textrel_shlib_t /usr/lib/libOesisCore.so
+    fi
+    
+    IfExist=`ps awx -o command|awk -F/ '{print $NF}'|grep -x iNodeMon`
+    if [ "$IfExist" != "" ]
+    then
+	"$INSTALL_DIR/iNodeMon" -k
+    
+    	Sec=0
+    	while [ 1 ]
+    	do
+            IfExist=`ps awx -o command|awk -F/ '{print $NF}'|grep -x iNodeMon`
+	    if [ "$IfExist" != "" ]
+	    then
+		sleep 1
+		Sec=`expr $Sec + 1`
+
+				if [ "$Sec" -lt 9 ]
+				then				   
+		    		killall -9 iNodeMon > /dev/null 2>&1
+		    	else 
+		    	    killall -9 iNodeMon
+		    	    break
+				fi
+	    	else
+				break
+	    	fi
+    	done
+    fi
+	
+    IfExist=`ps awx -o command|awk -F/ '{print $NF}'|grep -x AuthenMngService`
+    if [ "$IfExist" != "" ]
+    then
+	"$INSTALL_DIR/AuthenMngService" -k
+    
+    	Sec=0
+    	while [ 1 ]
+    	do
+            IfExist=`ps awx -o command|awk -F/ '{print $NF}'|grep -x AuthenMngService`
+		    if [ "$IfExist" != "" ]
+		    then
+				sleep 1
+				Sec=`expr $Sec + 1`
+		
+				if [ "$Sec" -lt 9 ]
+				then				    
+				    killall -9 AuthenMngService > /dev/null 2>&1				    
+				else
+				    killall -9 AuthenMngService
+				    break
+				fi				
+		    else
+				break
+		    fi
+    	done
+    	
+    	echo OK
+    else
+        echo "AuthenMngService not running"	
+    fi
+    
+    rm -f /var/lock/subsys/iNodeAuthService
+}
+
+# See how we were called.
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+        stop
+        sleep 5
+        start
+        ;;
+  *)
+        echo "Usage: iNodeAuthService {start|stop|restart}"
+        exit 1
+esac
+
+exit $RETVAL

@@ -1,0 +1,1740 @@
+######### Common module (CMN) #########
+CMN_ProxyProgFoul=Proxy program suppression check violation -- current connection will be cut off.
+CMN_IeProxySetFoul=IE proxy setting suppression check violation -- current connection will be cut off.
+CMN_MultiNicFoul=Multi-NICs suppression check violation -- current connection will be cut off.
+CMN_IpModeSetFoul=IP allocation method check violation -- current connection will be cut off.
+CMN_MacChangeFoul=MAC address modification suppression check violation -- current connection will be cut off.
+CMN_OfflineByForce=Offline by force.
+CMN_OffDevDisabled=Network interface card is disabled.
+
+######### Common UI module (CUI) #########
+CUI_OKBtn=OK
+CUI_CancelBtn=Cancel(&C)
+CUI_Prompt=Prompt
+CUI_Warning=Warning
+CUI_BackBtn=Back(&B)
+CUI_NextBtn=Next(&N)
+CUI_FinishBtn=Finish(&F)
+CUI_ConnectBtn=Connect(&Enter)
+CUI_NewConnWizard=Create New Connection Wizard
+
+CUI_Property=Property Setting
+CUI_InputUserName=Please input user name.
+CUI_InvalidUserName=User name can not contain continuous spaces and can only contain the following characters: \n [A,Z]U[a,z]U[0,9]U{-_.@ }.
+CUI_InputPasswd=Please input the password.
+CUI_InputPin=Please input the PIN key.
+CUI_GetNamePwd_Failed=Failed to read username and password.
+CUI_PinError=PIN key is wrong. You could try %d time(s).
+CUI_PINLocked=PIN is locked.
+CUI_USBKey_InitFailed=Smart Card initializing failed.
+CUI_GetUSBKeyFileFailed=Cannot get user information from smart card.
+CUI_USBKeyDefaultError=Unknown error.
+CUI_BoxTitle_Netconn=Network Connection.
+CUI_ConNameTooLong=The length of connection name cannot exceed 25 bytes.
+CUI_ConNameInvalid=A connection name cannot contain any of the following characters: \n \\ / : * ? \" ' < > | $
+CUI_DomainAuthAccount=☆Logon-once connection
+CUI_BeginPrgUpd=Begin program update
+CUI_PrgUpdHintHead=Client program will perform automatic update. The version after update is 
+CUI_PrgUpdHintTail=, User authentication will start again after update. Please confirm it.
+CUI_PrgUpdRmndHead=Hint: Update the client program to a new version.
+CUI_PrgUpdRmndTail=, Method: Click [Operation/Online Upgrade]
+CUI_RebootHintForce=To complete the update, please click OK to restart your computer.
+CUI_RebootHintOption=You need to restart the computer to complete patch updating. Are you sure to restart right now?
+CUI_DefAnnAccName=☆Quick authentication connection
+CUI_UnkErr=Unknown error
+CUI_NoMem=Insufficient memory
+CUI_ParErr=Parameter error
+CUI_VersErr=Connected version error
+CUI_NoActive=No active connection
+CUI_NoSendBuf=No buffer for sending packets.
+CUI_SendPacExcLim=The length of the sent packet exceeds the limit.
+CUI_SendErr=Packet sending error
+CUI_ConnNameRep=Connection name repeated. Connection is not created.
+CUI_MultiActive=Only one connection can be active. Please disconnect the currently active one.
+CUI_NoPt=Protocol not exist
+CUI_NoDevice=No available device, please make sure your network adapter is not disabled, or you must select an avalidable device again, Method: Click [File/Property].
+CUI_BadDevice=Connection disconnected ---- the network interface card is disabled.
+CUI_BadCable=Connection disconnected ---- the network cable is not plugged-in properly .
+CUI_ConnWakeUp=Connection wakes up from sleep.
+CUI_FindNoDownLoadPrg=Auxiliary downloading program not found.
+CUI_SysErr=System error
+CUI_CannotSendUpdCmd=Cannot send update command to update module.
+CUI_DelLogHint=Making logs of the Detail level may occupy a lot of CPU resources and increase I/O operations.
+CUI_MainUICannotStartHint=iNode Client cannot startup correctly and thus will exit.
+CUI_UpdateCusInfoFinished=Custom info update finished, client may need to install virtual NIC, please restart client after install finished.
+
+SMT_KeyNoReady=Please make sure a smart card has connected to your computer.
+SMT_PinCantEmpty=The old PIN key cannot be empty, and its length must between 6 to 15 characters.
+SMT_PinInvalHint=The old PIN key can only contain the following characters: \n
+SMT_NewPinCantEmpty=The new PIN key cannot be empty, and its length must between 6 to 15 characters.
+SMT_NewPinInvalHint=The new PIN key can only contain the following characters: \n
+SMT_PinDismatch=The new PIN key you typed do not match. Type the new PIN key in both text boxes.
+SMT_ChgPinSucc=PIN changed successfully.
+SMT_OperationSucc=Operation Successfully
+SMT_OperationFailed=Operation Failed
+SMT_PinChgFailAndRetry=Failed to change PIN.
+SMT_CheckSmartcardBindFail=Bind smart check failed.
+
+SMT_LogTitle=Connection
+CUS_LogPwdChk=Save password(&D)
+
+SMT_OtherOptComBox=Window Option
+
+######### Main UI module (MUI) #########
+MUI_ComfirmExitClient=Confirm Client Exit
+MUI_ComfirmRemedyClient=Confirm Client Remediation
+MUI_RemedyClientHint=Client remediation is needed only when the client does not work properly. \nAre you sure to start client remediation now?
+MUI_RemedyClientFailed=Client remediation failed.
+
+MUI_InstanceExist=An instance of iNode or some congeneric program is running.
+MUI_PortalAuth=Portal authentication
+MUI_VpnAuth=VPN authentication
+MUI_1XAuth=802.1X authentication
+MUI_SmartcardAuth=Smartcard authentication
+MUI_DvpnAuth=DVPN authentication
+MUI_CommonConn=Common connection
+MUI_AnonymousConn=Quick authentication connection
+MUI_DomainConn=Logon-once connection
+MUI_StoppingConns=Stopping current session(s). Please wait...
+MUI_ConnsStopped=Session stopping finished.
+MUI_FoundProgUpd=New update pack is found and will be upgraded automatically. Please wait...
+
+MUI_Cut=Disconnected
+MUI_ConnectFailed=Connection failed.
+MUI_BeingConnected=Establishing a connection...
+MUI_ConnectSucc=The connection is successfully established.
+MUI_BeingUp=Logging in
+MUI_BeSureToExit=Are you sure to exit iNode Intelligent Client?
+MUI_CreateDomainConnNow=Do you want to create a logon-once connection now?
+MUI_SrvExitAndRestart=Detected iNode authentication program is down. Please wait a moment while iNode Intelligent Client is trying to start it again...
+MUI_SrvStart=iNode authentication program is up now.
+MUI_ConnCutNRetrive=Current session closed. Now try to automatically restore it...
+MUI_SrvNotRunNRestartFailed=iNode authentication program is not running and cannot be started.iNode Intelligent Client will quit now. \nHint: Please make sure the service 'H3C iNode service' is not disabled.
+MUI_SrvExitNClientWillExit=Detected iNode authentication program is down. \niNode Intelligent Client will quit now.
+MUI_Err=Error
+MUI_ErrInofWithFmt=Error information: %u
+MUI_ConnFailWithEnter=Failed to set up a connection.\n
+MUI_DelConnWithEnter=Failed to delete the connection.\n
+MUI_BeingDown=Logging out
+MUI_ConnHasCut=Connection is disconnected.
+MUI_Timing=Duration 
+MUI_SelLogPath=Please select the save path for log file.
+MUI_PwdCannotEmptyNReinput=The old password cannot be empty, please input a password.
+MUI_PwdDismatchNReinput=The new password and the confirm password do not match, please try again.
+MUI_NewPwdCannotEmptyNReinput=The new password cannot be empty, please input a password.
+MUI_ReadConnSumLimit=Reach the upper limit of connection sum (5) -- cannot create a new one.
+MUI_BeSureToDelConn=Are you sure to delete the connection?
+MUI_AdminAskChgPwd=Administrator requires you change your password
+MUI_BesureCancel=Current connection will be cut off if you abort this operation. \nAre you sure to continue?
+MUI_BesureInfoOk=Current connection will be cut off if you fail to change password. \nAre you sure your information is correct?
+
+MUI_1xConnBeingGoon=802.1X connection is logging in
+MUI_PtConnBeingGoon=Portal connection is logging in
+MUI_VpnConnBeingGoon=VPN connection is logging in
+MUI_DvpnConnBeingGoon=DVPN connection is logging in
+MUI_1xPassNotSec=Pass 802.1X authentication,\nbut not pass security check.
+MUI_1xPassButNotSec=802.1X authentication passed. Security check failed.
+MUI_PtPassNotSec=Pass Portal authentication\nbut not pass security check.
+MUI_PtPassButNotSec=Portal authentication passed. Security check failed.
+MUI_VpnPassNotSec=VPN authentication passed\nbut security check failed.
+MUI_VpnPassButNotSec=VPN authentication passed. Security check failed.
+MUI_DvpnPassNotSec=Dvpn authentication passed,\nbut security check failed.
+MUI_VpnPassButNotSec=Dvpn authentication passed. Security check failed.
+MUI_1xPass=Passed 802.1X authentication
+MUI_PtPass=Passed Portal authentication
+MUI_VpnPass=Passed VPN authentication
+MUI_DvpnPass=Passed Dvpn authentication
+MUI_1xPassAndSec=Passed 802.1X authentication\nand security check
+MUI_1xPassSec=Passed 802.1X authentication and security check
+MUI_PtPassAndSec=Passed Portal authentication\nand security check
+MUI_PtPassSec=Passed Portal authentication and security check
+MUI_VpnPassAndSec=Passed VPN authentication\nand security check
+MUI_VpnPassSec=Passed VPN authentication and security check
+MUI_DvpnPassAndSec=Passed Dvpn authentication\nand security check
+MUI_1xConnBeingGoDown=802.1X connection is logging out
+MUI_PtConnBeingGoDown=Portal connection is logging out
+MUI_VpnConnBeingGoDown=VPN connection is logging out
+MUI_1xConnDisconnect=802.1X connection is disconnected
+MUI_PtConnDisconnect=Portal connection is disconnected
+MUI_VpnConnDisconnect=VPN connection is disconnected
+MUI_1xPtNetworkNicCut=Network connection disconnected
+
+MUI_ConnName=Connection Name
+MUI_ConnectTime=Connected Time
+MUI_DisconnectTime=Last Disconnection
+MUI_UserName=User Name
+MUI_ProtocolName=Protocol
+
+MUI_Task=Task 
+MUI_TaskExecuting=is executing...\n
+MUI_BeSureStopTask=are you sure to stop it?
+MUI_BeSureExitWithOneCon=There is an online connection. Exit will disconnect this connection.Are you sure to exit?
+MUI_BeSureExitWithCons=Currently there are more than one connections. \nExit will disconnect all the connections.Are you sure to exit?
+
+MUI_Welcom=Welcome to iNode Intelligent Client.
+MUI_BeingCancelWaitPls=Cancelling, please wait...
+
+MUI_InitFailed=Initialization failed
+MUI_SysErr=System error
+MUI_UpdateHint=Client update program\ncannot run alone.
+MUI_RunErr=Running error
+MUI_DownloadSuc=Downloading succeeded.
+MUI_ReauthAftUpdate=Reauthentication is required after update.
+MUI_Downloading=Downloading the latest update file ...
+MUI_DownloadStatus=Download Status
+
+MUI_SysAdminInfoU=User information: 
+MUI_CommConRdTitle=Common connection(&C)
+MUI_CommConDes=You need a username and a password to create a new connection.
+MUI_AnonyConRdTitle=Quick authentication connection(&Q)
+MUI_AnonyConDes=Use the special username and password to create a connection.
+MUI_DomainConRdTitle=Logon-once connection(&O)
+MUI_DomainConDes=Before logon Windows, first do a network access authentication using the same user information for logon Winodows.
+MUI_ShortcutChkTitle=Add a shortcut to this connection to my desktop(&S)
+
+MUI_AuthProto=Authentication Protocol:
+MUI_ConCreateTimeLb=Created on: 
+MUI_AuthPassTimeLb=Passed on: 
+MUI_SecLb=Passed Security Check
+MUI_NotSecLb=Security Check Failed
+MUI_AuthPassLb=Pass Authentication
+MUI_SavePwdRdTitle=Save password(&D)
+MUI_AdvancedAuthTitle=Enable advanced authentication(&E)
+MUI_SmartCardRdTitle=Smart Card authentication(&K)
+MUI_CertRdTitle=Certificate authentication(&Q)
+
+MUI_DelConCfm=Confirm Connection Delete
+MUI_CreateShortcutCfm=Are you sure to create a shortcut to the connection on desktop?
+MUI_CreateShortcutTitle=Confirm Shortcut Create
+
+MUI_ClientCfgOptions=Client Settings
+
+MUI_FontName=Arial
+MUI_SelAuthPt=Select an authentication protocol
+MUI_ClientSummary=iNode intelligent client provides a uniform platform for multiple protocols
+MUI_SelConType=Select connection type
+MUI_ConTypeSupp=The connection type(s) supported by the current protocol.
+MUI_ClientVersion=Client Version
+
+MUI_AnonyConExistsHint=A quick authentication connection already exists. \nPlease select one of other connection types.
+MUI_DomainConExistsHint=Only one logon-once connection can exist. Cannot create second one. \nPlease select one of other connection types.
+MUI_SmartCardUserChgPin=Smart Card User PIN Change
+MUI_CollectHostInfo=Collect Host Info
+MUI_NoCfgFile=Cannot start up the client for the custom info file cannot be found or has been destroyed. 
+MUI_NoArpDrvb=The filter driver is not available on your computer,the active connection will be cut off.Please click [Operation/Install the filter driver] to install it,or else the client cannot work normally.
+MUI_ArpFltDrvAvail=It doesn't need to install the filter driver.
+MUI_FltHint=The active connection will be cut off.Sometimes you must confirm client \nremediation after the driver is installed.Please click OK.
+MUI_UseWinInfo=The online wireless connection will be disconnected if you select Windows to manage wireless. \nAre you sure to continue?
+
+MUI_MuneFile=File(&F)
+MUI_MuneFile.Connect=Connect(&A)
+MUI_MuneFile.Status=Status(&U)...
+MUI_MuneFile.Disconnect=Disconnect(&B)
+MUI_MuneFile.NewConn=New Connection
+MUI_MuneFile.ChgUserName=Change Username(&C)...
+MUI_MuneFile.CreShortcut=Create Shortcut(&S)
+MUI_MuneFile.DelConn=Delete(&D)
+MUI_MuneFile.Rename=Rename(&M)
+MUI_MuneFile.Property=Property(&R)...
+MUI_MuneFile.OpenMainWnd=Open Management Window(&O)
+MUI_MuneFile.Exit=Exit(&X)
+
+MUI_MuneOperation=Operation(&P)
+MUI_MuneOperation.SetTrap=Trigger Security Check(&A)
+MUI_MuneOperation.SetTrapT=Trigger Security Check(&A)
+MUI_MuneOperation.StopTask=Stop Task(&T)
+MUI_MuneOperation.ChgPwdOnline=Change Password Online(&W)...
+MUI_MuneOperation.ClientSet=Client Settings(&S)...
+MUI_MuneOperation.ChgPin=Smart Card User PIN Change(&C)
+MUI_MuneOperation.CollectHostInfo=Collect Host Info(&H)
+MUI_MuneOp.RemedyClient=Client Remediation(&R)
+MUI_MuneOperation.Upgrade=Online Upgrade(&U)
+MUI_MuneOperation.SelCifMsgBox=Please select the place where to save the host identifier file.
+MUI_MuneOperation.CifExistMsgBox=Host identifier file already exists. Do you want to re-create?
+MUI_GetHostIdFailed=Collecting host information failed.
+MUI_GetHostIdSucc=Collecting host information succeeded.
+MUI_MuneOperation.InstallArpFltDrv=Install the filter driver(&I)
+MUI_MuneOperation.UseWindws=Use Windows to manage wireless(&M)
+
+MUI_MuneInfo=Information(&I)
+MUI_MuneInfo.ChkSecInfo=Latest Security Check Result(&L)...
+MUI_MuneInfo.HostAndNetworkInfo=Host and Network Information(&M)
+MUI_MuneInfo.DamAgentStatus=Dam Agent Status(&C)
+MUI_MuneInfo.DamAgentSoftDstrMnt=Dam Agent Software Distribute Management(&D)
+MUI_MuneView=View(&V)
+MUI_MuneView.ToolBar=Toolbar(&T)
+MUI_MuneView.StatusBar=Status Bar(&S)
+MUI_MuneView.Icon=Icon(&I)
+MUI_MuneView.List=List(&L)
+MUI_MuneView.Navigate=Navigation Pane(&B)
+MUI_MuneView.AuthInfo=AuthN Info(&A)
+MUI_MuneView.Messages=Messages(&M)
+MUI_MuneHelp=Help(&H)
+MUI_MuneHelp.Topics=Help Topic(&T)...
+MUI_MuneHelp.About=About iNode Intelligent Client(&A)...
+MUI_RichEditMenu.Copy=Copy
+MUI_RichEditMenu.SelAll=Select All
+MUI_RichEditMenu.ClearAll=Clear All
+MUI_MessageMenu.History=History Message
+
+MUI_ToolTipDel=Delete connection
+MUI_ToolTipConnect=Start authentication
+MUI_ToolTipDisconnect=Disconnect
+MUI_ToolTipStatus=View connection status
+MUI_ToolTipProperty=Configure the connection property
+MUI_ToolTipSecTrap=Trigger security check
+MUI_ToolTipSecInfo=Latest security check result
+MUI_ToolTipSysRepair=Client Remediation
+MUI_ToolTipHelp=Help
+
+MUI_UserPwdChgDlgTitle=Change Password
+MUI_OldPwdStatic=Old Password(&O):
+MUI_NewPwdStatic=New Password(&N):
+MUI_CfmPwdStatic=Confirm Password(&C):
+MUI_SavePwdChk=Refresh the locally saved password after it is changed successfully(&S)
+
+MUI_OldPinStatic=Old PIN(&O):
+MUI_NewPinStatic=New PIN(&N):
+MUI_CfmPinStatic=Confirm PIN(&C):
+
+MUI_NoAddInfo=Nothing.
+MUI_AboutDlgTitle=About
+MUI_ProductInfoCombox=Product Info
+MUI_VersionStatic=Version:
+MUI_DetailVersionStatic=Detailed Version:
+MUI_CopyRightCombox=Copyright Info
+MUI_CompanyNameStatic=(c) 2004-2008 Hangzhou H3C Technologies Co., Ltd.
+MUI_RightReservedStatic=All rights reserved.
+MUI_AddInfoCombox=Additional Info
+
+MUI_CfgRunModePgTitle=Run Mode
+MUI_CfgLogLevelPgTitle=Log Level
+MUI_CfgRunModeComBox=Start Mode
+MUI_EnableDomainChk=Enable logon-once function(&O)
+MUI_DomainDes=To use logon-once function, you must create a logon-once connection first.
+MUI_CfgOSLogoutComBox=OS Logoff
+MUI_KeepOnlineChk=Keep session when the OS logoff(&K)
+MUI_WndMiniComBox=Window Minimization
+MUI_WndMiniChk=Minimize the window after startup(&M)
+MUI_CfgLogLevComBox=Log Level
+MUI_RecordMsgLogChk=Record massage logs(&M)
+MUI_RecordSynChk=Record synchronization mechanism(&S)
+
+MUI_WizardFaceWelcome=Welcome to new connection wizard
+MUI_WizardHelpCreConn=This wizard will help you to create a connection related to the authentication protocol.
+MUI_WizardProvideConnect=The new connection will connect your computer to the network.
+MUI_WizardWireConnRadio=Wire Network
+MUI_WizardWirelessConnRadio=Wireless Network
+MUI_WizardWireConnDesc=Enter wire connection wizard
+MUI_WizardWirelessConnDesc=Enter wireless connection wizard
+MUI_WizardToContinue=To continue, click <Next>.
+MUI_WizardFinishSum=Completing the new connection wizard
+MUI_WizardCreateSucc=You have successfully completed the steps needed to create the following connection.
+MUI_WizardToClose=To create the connection and close the wizard, click <Create>.
+
+MUI_ListHeaderX1Name=802.1X 
+MUI_ListHeaderPtName=Portal 
+MUI_ListHeaderVpnName=L2TP IPSEC VPN 
+
+MUI_NICPg_Hostname=Hostname:
+MUI_NICPg_NoAdapterAvailable=No available network adapters
+MUI_NICPg_ProVal=Value
+MUI_NICPg_Adapter=Network Adapter
+MUI_NICPg_NetworkType=Network Type:
+MUI_NICPg_MACAddress=MAC Address
+MUI_NICPg_IPAddress=IP Address 
+MUI_NICPg_SubnetMask=Subnet Mask
+MUI_NICPg_DefaultGateway=Default Gateway
+MUI_NICPg_GetIPMethod=Method of Getting IP
+MUI_NICPg_Dynamic=Automatically
+MUI_NICPg_Statical=Statically
+MUI_NICStatic=Network Adapter
+
+MUI_MonitorSht_Name=Host and Network Information
+MUI_RoutingPg_PgName=Routing Table
+MUI_RoutingPg_RoutTbNoEntry=No entries in route table.
+MUI_RoutingPg_GetRoutInfoFail=Failed to get the information of IP routing table.
+MUI_RoutingPg_NetDes=Network Destination
+MUI_RoutingPg_NetMask=Net Mask
+MUI_RoutingPg_GatewayAddress=Gateway Address
+MUI_RoutingPg_Interface=Interface
+MUI_RoutingPg_Metric=Metric
+
+MUI_ClientPg_PgName=Client Information
+MUI_ClientPg_CombStaticComponents=Functions and Protocols
+MUI_ClientPg_ColumnComponents=Functions and Components
+MUI_ClientPg_ColumnSupported=Supported
+MUI_ClientPg_ColumnEAD=EAD
+MUI_ClientPg_ColumnSmartCard=Smart Card
+MUI_ClientPg_ColumnDAMA=Desktop Asset Management
+MUI_ClientPg_Column8021=802.1X
+MUI_ClientPg_ColumnPortal=Portal
+MUI_ClientPg_ColumnVPN=L2TP IPSEC VPN
+MUI_ClientPg_ColumnWireless=Wireless
+
+MUI_UserPg_PgName=User
+MUI_UserPg_Other=Other
+MUI_UserPg_CurrUser=Current User
+
+MUI_UserPg_UsernameStatic=Username:
+MUI_UserPg_DomainStatic=Domain:
+MUI_UserPg_GroupStatic=Group:
+MUI_VistaUserHint=You might need to be logged on as an administrator or a member of \nthe Administrator group in order to run iNode client on Vista. 
+MUI_SaveAsWndTitle=Save
+
+MUI_SYSTEMMENU_MIN=Minimize
+MUI_SYSTEMMENU_MAX=Maximize
+MUI_SYSTEMMENU_CLOSE=Close
+MUI_SYSTEMMENU_RESTORE=Restore
+
+MUI_Get_Telnet_DlgTitle=Remote Desktop Access Request
+MUI_Get_Telnet_Info=Your administrator is trying to take over your current desktop remotely in order to fix some problems. Please input the username and password through which you have logged into the current OS session.
+MUI_Get_Telnet_Hint=If you have logged into a domain, please put the domain name ahead of the username, in between with a backslash (e.g. 'domain\username'). 
+MUI_Get_Telnet_UserName=User Name(&U):
+MUI_Get_Telnet_Password=Password(&P):
+MUI_Get_Telnet_UNEmpty=The user name cannot be empty, please input a user name.
+
+MUI_ManulAuthAftRunning=Start authentication manually after the client is enabled
+MUI_AutoAuthAftRunning=Start authentication automatically after the client is running
+MUI_AuthBfLogOnDomain=Start authentication before logging into Windows
+
+MUI_BtnCreate=Create(&F)
+MUI_ToolBarCreate=New
+MUI_ToolBarDel=Delete
+MUI_ToolBarConn=Connect
+MUI_ToolBarDisConn=Disconnect
+MUI_ToolBarStatus=Status
+MUI_ToolBarPro=Property
+MUI_ToolBarSec=Security
+MUI_ClientName=iNode Intelligent Client
+MUI_DesktopLnkName=iNode Intelligent Client
+MUI_AuthInfo=Authentication Information
+MUI_Messages=Messages
+MUI_SysInform=User information:  
+MUI_CreConnHint=Currently no connection is available.\nDo you want to start wizard to create a connection now?
+MUI_CfgStartWizard=Confirm Starting New Connection Wizard
+MUI_ShortCutConn=Shortcut to connection
+MUI_CfgCreDomConn=Confirm Logon-once Connection Create
+MUI_NewConn=&New connection
+MUI_NewConn_Des=Create one new connection
+MUI_CreateConnWire=Setup Wire Network Connection
+MUI_CreateConnWireMenu=Setup Wire Network Connection(&E)
+MUI_StartUse=Connect
+MUI_StopUse=Disconnect
+MUI_CfgProperty=Configure property
+MUI_ConnStatus=Connection status
+MUI_ChgUserNameAndPwd=Change username and password
+MUI_DeleteConn=Delete connection
+MUI_RenameConn=Rename connection
+MUI_RestartAuth=Restart authentication
+MUI_ResartSec=Trigger Security Check
+MUI_SecChecRes=Security check result
+MUI_StopSecTask=Stop security task
+MUI_Self-SevPlatf=Self-service platform
+MUI_ChgPwdOnline=Change password online
+MUI_CreShortCutConn=Create shortcu
+MUI_TaskPane=Task Pane
+MUI_ConnOPeration=Wire Connection Operations
+MUI_OtherOperation=Settings
+MUI_SetClientRunMode=Client Settings
+MUI_OpenHelp=Help topic
+MUI_ConnInfo=Connection Information
+MUI_UpGradeOnline=Online Update
+
+######### Update UI module (UUI) #########
+UUI_DownloadFail=Fail to download update file. Please check if network connection is OK.
+
+######### 8021.x UI module (XUI) #########
+XUI_TimeFmt=%02u hour(s) %02u minute(s)
+XUI_ConnName_Existed=Connection name already exists. Please specify another one.
+XUI_UserNamePwdCannotEmpty=Connection name and user name cannot be empty.\nPassword cannot be empty when saving it.
+XUI_RootCertErr=Certificate setting errors.
+XUI_RootCertCannotEmpty=Root certificate name cannot be empty. Please click <Settings...> to perform related settings.
+XUI_UserCertCannotEmpty=User certificate name cannot be empty. Please click <Settings...> to perform related settings.
+XUI_UserPrivateKeyCannotEmpty=User private key name cannot be empty. Please click <Settings...> to perform related settings.
+XUI_CertCfg=Settings
+XUI_RootCertCannotEmptyTitle=Root certificate name cannot be empty.
+XUI_UserCertCannotEmptyTitle=User certificate name cannot be empty. 
+XUI_UserPrivateKeyCannotEmptyTitle=User private key name cannot be empty.
+
+XUI_InputPwdPls=Please input the password.
+XUI_InputConNamePls=Please input connection name.
+XUI_CannotRename=Cannot rename this connection for a connection with the name you specified already \nexists.Please Specify a different connection name.
+XUI_CannotRenameForLen=Cannot rename this connection: the length of the name you specified \nexceeds the upper limit. Please specify a different one.
+XUI_RenameErr=Renaming Connection Error
+
+XUI_MustInputPwd=Password cannot be empty when connecting.
+XUI_OperationErr=Operation error
+XUI_ConnDataErr=Connection data error
+XUI_CfgDataErr=Configuration data error
+XUI_WaitSleep=Sleep and wait
+XUI_BeginToAuth=Begin authentication
+XUI_NoSelAdapter=Network adapter not selected
+#XUI_DomainInitUser Domain user
+
+XUI_ChkDevice=Check device
+XUI_AquireServer=Check server
+XUI_NormalConnect=Normal connection
+XUI_NotConnect=Connection not established
+XUI_X1NetInfoPgTitle=Network Information
+XUI_X1RunInfoPgTitle=Running Information
+XUI_X1SecInfoPgTitle=Security Information
+XUI_X1StateShtTitle= Status
+XUI_SrvWizard=Service Creation Wizard
+XUI_AnonyConCannotChgPwd=User name and password of quick authentication conection cannot be modified.
+XUI_DefaultConName=My 802.1X Connection
+
+XUI_DeviceCutHint=Your network adapter is disabled or the connection is closed, and you might have no privileges of accessing network.
+XUI_DeviceResumeHint=Network connection is resumed
+XUI_EAPstartNOresponse=There is no response from peer server. Please make sure your network adapters connected to a proper network.
+XUI_UserNamePwdErr=User name or password error
+XUI_TimeOut=Idle time limit
+XUI_UserTimeExceed=exceeds user time limit
+XUI_UserFlowExceed=exceeds user traffic limit
+XUI_ReAuthFail=Reauthentication failed
+XUI_ForceToOffline=Forced logoff
+XUI_UserReqOffline=User logs off actively
+XUI_ForbidOfferProxy=Proxy check: Sever forbids the user to provide proxy service.
+XUI_AdapterCut=Network error. Your network adapter is disabled or the connection is closed.
+XUI_DHCPErr=DHCP error.
+XUI_IPConflict=There is an IP address conflict with another system on the network. Connection has been cut off.
+XUI_RecOfflineReqFrmServer=Receives offline request from server.
+XUI_Close=Close
+XUI_BeginHandinPwd=Uploading password...
+XUI_BeginValidatePwd=Authenticating password...
+XUI_BeginAuth=Beginning authentication...
+XUI_BeginCertAuth=Authenticating certificate...
+XUI_BeginCerInitFail=Load certificates Failed
+XUI_IdeAuthSucc=You have passed the identity authentication
+XUI_ConnectCut=Connection failed, please make sure user credential info is correct.
+XUI_ReConnetPrmpt=Authentication failed. Another attempt will start after 
+XUI_ReConnetPrmptEnd=.
+XUI_ConnectCutByDev=Connection cut by the device forcibly.
+XUI_ServerReqUserAuth=Sever requires the user to be authenticated
+XUI_SleepForTimeOut=Link times out and enters the sleep state
+XUI_ConnCutForNetCardNotCls=Connection disconnected. Your network adapter is disabled or the connection is closed.
+XUI_RefreshIP=Obtaining IP address...
+XUI_RefreshIpWhenDown=Obtain IP address when disconnecting...
+XUI_RefreshIPCurrent=Current IP address is 
+XUI_RefreshIPDone=Obtaining IP address finished.
+XUI_RefreshIPFail=IP address might not be obtained. Please check the network status information later. 
+XUI_ConnIsOff=Connection closed.
+XUI_ConnectToNet=Connecting to the network...
+XUI_OddTime_HMS_FMT=Remaining Time: %02u hour(s) %02u minute(s) %02u second(s)
+XUI_Shutdown1XOfXP=Remind: If current 802.1X authentication conflicts with the one Windows provides, please disable the later.
+XUI_AccountInfo=Account Information
+XUI_AccountDes=You need the user name and password to access networks, the certificate authentication can enhance the security of the communications.
+XUI_AccountAnonyDes=Account information of quick authentication connection cannot be changed.
+XUI_AccountDomainDes=If you need to logon a Windows domain and wish to use logon-once function, the format for logon-once connction's user name is logon_name@domian_name.
+XUI_SelAdapter=Network Property Settings
+XUI_CfgDes=You can change the current default settings of the network properties of the connection when they are changeable.
+XUI_TLSgOver=The packets processed by TLS exceed the length limit of [%d]
+
+XUI_X1PtRdTitle=802.1X protocol
+XUI_X1PtDes=802.1X is a commonly used authentication for network accesses. 
+XUI_X1AuthFailed=802.1X Authentication Failed
+XUI_UserPgTitle=User
+XUI_GenaralPgTitle=General
+XUI_OtherPgTitle=Others
+
+XUI_ConnNameStatic=Connection name(&C):
+XUI_UserNameStatic=Username(&U):
+XUI_UserPwdStatic=Password(&P):
+XUI_Domain=Domain(&D:):
+XUI_SavePwdChk=Save password(&D)
+XUI_EanbleAdvAuthChk=Enable advanced authentication(&E)
+XUI_MACRdShort=MAC authN(&M)
+XUI_SmartCardRdShort=Smart Card authN(&K)
+XUI_CertificateRdShort=Certificate authN(&I)
+XUI_MACRd=MAC authentication(&M)
+XUI_SmartCardRd=Smart Card authentication(&K)
+XUI_CertificateRd=Certificate authentication(&I)
+XUI_CertSetBtn=Settings(&S)...
+XUI_SelAdapterComBox=Select NIC
+XUI_AuthModeComBox=Authentication Mode
+XUI_AuthOptionComBox=Authentication Options
+XUI_UserOptionComBox=User Options
+XUI_AutoAuthChk=Auto authN after startup
+XUI_AutoAuthChkWizard=Auto authN after startup(&A)
+XUI_UpVersionChk=Carry version info(&V)
+XUI_PktTypeComBox=Packet Type
+XUI_UnicastRd=Unicast(&X)
+XUI_MulticastRd=Multicast(&W)
+XUI_UpIpChk=Upload IP address(&L)
+XUI_RefreshIpAftCutChk=Auto-renew IP address after disconnected
+XUI_HodIpAftCutChk=Hold IP address after disconnected
+XUI_ReAuthChk=Reauthenticate (90s)(&R)
+XUI_RestoreDefaultChk=Restore Defaults(&T)
+XUI_ResumeConn=Connect after net restore(&Q)
+
+XUI_PopLogWndChk=Display logon dialog when enable the connection manually(&P)
+XUI_CertCfgHintStatic=You can click <Browse...> to select the desired file.
+XUI_RootCertStatic=Trusted root certificate:
+XUI_UserCertStatic=User certificate:
+XUI_UserPrivateKeyStatic=User private key:
+XUI_PrivateKeyStatic=Private key password(&P):
+XUI_BrowseBtn=Browse...
+
+XUI_RunInfoCombox=Running Info
+XUI_CruDurationStatic=Current duration:
+XUI_SumDurationStatic=Total duration:
+XUI_DurationHintStatic=Note: Durations above are only for reference, not for accounting purpose.
+XUI_StatusStatic=Status:
+XUI_StatusConStatic=Connected
+XUI_StatusDisBtn=Disconnect(&D)
+
+XUI_NetInfoCombox=Network Info
+XUI_AdapterStatic=Network Adapter
+XUI_AuthIpStatic=Current IP Address
+XUI_GatewayStatic=Gateway Server
+XUI_DhcpStatic=DHCP Server
+XUI_WinsStatic=Wins Server
+
+XUI_AutoConnExists=A connection that initiates authentication automatically has existed.
+XUI_CusTimeStatic=Customized At:
+
+XUI_BroadLogoff=Broadcast logoff(&G)
+XUI_CertAdvandCfg=Certificate Authentication Configure
+XUI_CertAdvandCfgStaA=Certificate Options
+XUI_CertAdvandCfgStaB=Authentication Type
+XUI_BtnCertsel=Select certificate(&S)...
+XUI_ChkVerifysvr=Validate server certificate chain(&V)
+XUI_RdEaptls=EAP-TLS (&T)
+XUI_RdPeap=PEAP(&A)
+XUI_StaUsername=Protected user name(&U):
+XUI_StaPwd=Protected password(&W):
+
+XUI_CertCfgErrTitle=Certificate Property
+XUI_CertHashCannotEmpty=Client certificate must had been selected when using EAP-TLS authentication type.
+XUI_ProtectNameCannotEmpty=Protected user name cannot be empty when using PEAP authentication type.
+XUI_ProtectPWDCannotEmpty=The password can not be empty, please input the password.
+
+XUI_SelCertAuthPls=Please initiate the connection again after the certificate authentication is enabled. Method: Click [File/Property].
+XUI_CertAuthTypeErrHead=Sever requires 
+XUI_CertAuthTypeErrTail= type to be used. Please initiate the connection again after selecting the required type.
+
+XUI_ForbidIPChange=[ARP FILTER]Client forbids the user to modify the IP address of the adapter which is selected by the onine connction. 
+######### Portal UI module (PUI) #########
+PUI_TipCaption=Portal Authentication.
+PUI_DefaultConName=My Portal Connection
+PUI_Wait=Please wait...
+PUI_InputConnName=Please input a connection name.
+PUI_SameConnName=A same connection already exists. Please rename the connection.
+PUI_TimeHour=hours
+PUI_TimeMinute=minutes
+PUI_WaitCancelCreate=Processing disconnect request, please wait...
+PUI_UserNameLessThan32=The length of user name and service suffix cannot exceed 32.
+PUI_ConnName_Existed=Connection name already exists. Please specify another one.
+PUI_UserName_WrongForm=Please input the username in correct format (abc@cams).
+PUI_EmptyPassword=The password can not be empty, please input the password.
+PUI_WndTitle_Statue=Status
+PUI_PortalAuthFailed=Portal Authentication Failed
+PUI_UserName_TooLong=The username exceeds the specified limit, please try again.
+PUI_PortalProName=Portal protocol
+PUI_PortalPtDes=Portal is a portal-based authentication for the broadband accesses.
+
+PUI_PgNetworkTitle=Network
+PUI_PgNetworkServerIpStatic=Server IP(&S):
+PUI_PgNetworkInputIp=Please input server IP.
+PUI_PgNetworkInvalidIp=The IP you input is not valid.
+
+
+PUI_LogTitle=Connection
+PUI_LogUsNamStatic=Username(&U):
+PUI_LogPwdStatic=Password(&P):
+PUI_LogPinStatic=PIN(&I):
+PUI_LogPwdChk=Save password(&S)
+PUI_LogOKBtn=Connect
+PUI_LogPropertyBtn=Properties...(&V)
+PUI_LogHighAuth=Enable advanced authentication(&H)
+PUI_LogUsbCardAuth=Smart card anthN(&K)
+PUI_LogMacAuth=MAC anthN(&M)
+PUI_PgNetWkChkAutoCon=Connect after net restore(&R)
+PUI_ResumeConnExists=A connection that initiates authentication after net restore has existed. 
+
+PUI_CreatTwoStatic=Portal Connection Basic Attributes
+PUI_CreatTwoCommentStatic=You need the username and password to access networks and select the desired service.
+PUI_CreatTwoConNameStatic=Connection Name(&L):
+PUI_CreatTwoUserNameStatic=Username(&U):
+PUI_CreatTwoPwdStatic=Password(&P):
+PUI_CreatTwoServiceTypeStatic=Service type
+PUI_CreatTwoPwdChk=Save password(&S)
+PUI_CreatTwoVersChk=Carry version info(&V)
+PUI_CreatTwoAutoChk=Auto authenticate after startup(&C)
+PUI_CreatTwoHighAuth=Enable advanced authentication(&H)
+PUI_CreatTwoUSBChk=Smart card authentication(&K)
+PUI_CreatTwoMacAuth=MAC authentication(&M)
+PUI_CreatTwoResumeCon=Connect after net restore(&R)
+
+
+PUI_CreatOneStatic=Obtain the portal server information
+PUI_CreatOneCommentStatic=The Portal server information will be saved to the connection you have created to be used for authentication.
+PUI_CreatOneMentStatic=Connecting to the server, please wait...
+PUI_CreatOneConStatic=Asking for connect...
+
+PUI_ProTitle=General
+PUI_ProUsNamStatic=Username(&U):
+PUI_ProPwdStatic=Password(&P):
+PUI_ProServiceTypeStatic=Service type(&T):
+PUI_ProPwdeChk=Save password(&S)
+PUI_ProVersChk=Carry version info(&V)
+PUI_ProAutoChk=Auto authN after startup(&C)
+PUI_ProUsbCardAuth=Smart card authentication(&K)
+PUI_ProMacAuth=MAC authentication(&M)
+
+PUI_OtherDlgTitle=Others
+PUI_OtherOptComBox=Window Option
+PUI_OtherWndChk=Display logon dialog when enable the connection manually(&P)
+
+PUI_StatusTitle=Portal Running Information
+PUI_StatusRunInfoCombox=Running Info
+PUI_StatusStatic=Status:
+PUI_StatusConStatic=Connected
+PUI_StatusAuthTimeStatic=AuthN Elapsed Time:
+PUI_StatusAcesTimeStatic=Access Elapsed Time:
+PUI_StatusAuthIPStatic=Current IP address:
+PUI_StatusDisBtn=Disconnect(&D)
+PUI_HintStatic=Note: Durations above are only for reference, not for accounting purpose.
+
+######### VPN UI module (VUI) #########
+VUI_MyVPNConnName=My VPN Connection
+VUI_Font=Arial
+VUI_InvalidConName=Connection name is empty or contains invalid characters.\nPlease input again.
+VUI_InputValidLNSIP=Please input a complete and valid IP address of the LNS server.
+VUI_InvalidUserPwd=User password is empty or contains invalid characters.\nPlease input again.
+VUI_InvalidPreSharedKey=Identity authenticator is empty or contains invalid characters.\nPlease input again.
+VUI_InputValidIPSECServer=Please input a complete and valid IP address of the IPSEC server.
+VUI_InputTunnelName=Please input the Tunnel name.
+VUI_InputLocalPeerName=Please input the Local security gateway name and Remote security gateway name.
+VUI_ConSeniorProperty=Advanced Property
+VUI_ConProperty=VPN connection properties
+VUI_TimeFormat=%02u hour(s) %02u minute(s)
+VUI_CfgNameError=Connection name and user name cannot be empty.\nPassword cannot be empty when saving it.
+VUI_EmptyPwd=Password cannot be empty when connecting.
+VUI_ConDataError=Connection data error
+VUI_InputValidISAKMPSA=ISAKMP-SA lifetime is error, please input a valid value between 60 and 604800.
+VUI_LocalGateName=Local security gateway name is empty or contains invalid characters.\nPlease input again.
+VUI_PeerGateName=Remote security gateway name is empty or contains invalid characters.\nPlease input again.
+VUI_SendKeepAliveTimerErr=Send KeepAlive packets time interval is error, please input a valid value between 20 and 28800.
+VUI_RecvKeepAliveTimerErr=Recieve KeepAlive packets timeout time is error, please input a valid value between 20 and 28800.
+VUI_InputValidPLS=SA lifetime is error, please input a valid value between 30 and 604800.
+VUI_InvalidTunnelName=Tunnel name is empty or contains invalid characters.\nPlease input again.
+VUI_InputValid1000PLS=Interval for sending Hello packets is error, please input a valid value between 60 and 1000.
+VUI_InvalidTunnelPwd=Tunnel authentication password is empty or contains invalid characters.\nPlease input again.
+VUI_InvalidInput=The inputted value contains illegal characters.
+VUI_USER_CERT_UNKOWN=User certificate is not set. Please click "Select a certificate..." button to select user certificate.
+VUI_CERT_UNDEFINE=No certificate. Please click "Cert-settings" button to select certificate.
+VUI_USER_CERT_FAIL=Get user certificate failed
+VUI_USBKEY_TIMEOUT=Smart Card operation time out
+VUI_USBKEY_ERROR=Smart Card error
+VUI_CERT_NO_SET=Do not set certificate.Please click "Properties..." button to set.
+VUI_RSASecId=Use RSA Security ID(&Y)
+
+VUI_VpnPtRdTitle=L2TP IPSEC VPN protocol(&V)
+VUI_VpnPtDes=Connect to the remote access server through Internet or other networks to access network resources securely.
+
+VUI_IKESecurityProposal=IKE security proposal settings
+VUI_IKENegMode=Negotiation mode(&N):
+VUI_IKEIDType=ID type(&I):
+VUI_IKEAuthMethod=Authentication method(&M):
+VUI_IKEEncrypt=Encryption algorithm(&E):
+VUI_IKEAuth=Authentication algorithm(&A):
+VUI_IKEDHGroup=Diffie-Hellman group identifier(&D):
+VUI_IKEISAKMPSA=ISAKMP-SA lifetime(&K):
+VUI_IKESecond=second(s)
+VUI_IKELocalName=Local security gateway name(&L):
+VUI_IKERemoteName=Remote security gateway name(&R):
+VUI_IKESendKeepAlive=Send KeepAlive packets regularly(&S)
+VUI_IKETimeInterval=Time interval(&T):
+VUI_IKETimeout=Timeout time(&O):
+VUI_IKERecvKeepAlive=Recieve KeepAlive packets(&F)
+
+VUI_L2TPProSetting=L2TP Protocol Settings
+VUI_L2TPTunnelName=Tunnel name(&T):
+VUI_L2TPAuthMode=Authentication mode(&A):
+VUI_L2TPHelloInterval=Interval for sending Hello packets(&I):
+VUI_L2TPUseTunnelPwd=Use tunnel authentication password(&U)
+VUI_L2TPTunnelPwd=Tunnel authentication password(&P):
+VUI_L2TPAVPHidden=Use AVP Hidden
+
+VUI_BASESetting=VPN Connection Basic Settings
+VUI_BASELNSIP=LNS Server IP(&S):
+VUI_BASEUserName=Login username(&U):
+VUI_BASEUserPwd=Login password(&P):
+VUI_BASEIfEnableIpsecCombox=Whether to Enable IPSec
+VUI_BASEUseIPSEC=Enable IPSec security protocol(&E)
+VUI_BASEPreSharedKey=Authenticator(&K):
+VUI_BASEIPSECSERVERIP=IPSec Server IP:
+VUI_BASEIPSECSERVERIPCombox=IPSec Server IP
+VUI_BASELNSASIPSECServer=Use LNS server IP(&L)
+VUI_BASEUseOtherIPSECServer=Use other IPSec server IP(&I)
+VUI_BASEHeigth=Advanced(&C)...
+VUI_BASEUsbKeyAuth=Smart card authentication
+VUI_BASEAdvAuth=Get username and password from smart card(&Q)
+VUI_BASEMethod=Authen-method(&M):
+VUI_BASEComboMethod1=Pre-shared-Key
+VUI_BASEComboMethod2=Certificate
+VUI_BASEBtnCertSet=Cert-Settings(&W)...
+
+VUI_IPSECProSetting=IPSec Security Proposal Settings
+VUI_IPSECEncapMode=Encapsulation mode(&E):
+VUI_IPSECSALifetime=SA lifetime(&S):
+VUI_IPSECAdopSecuriProto=Used security protocol(&U):
+VUI_IPSECESPAuth=ESP authentication algorithm(&A):
+VUI_IPSECESPEncypt=ESP encryption algorithm(&T):
+VUI_IPSECAHAuth=AH authentication algorithm(&H):
+VUI_IPSECUseNat=Use NAT traversal(&N)
+VUI_UsePFS=Use PFS
+VUI_PFS=PFS
+
+VUI_CreateWizardTitle=VPN Connection Basic Settings
+VUI_BaseSettings=Basic Settings
+VUI_CreateWizardComment=You can use the username and password to access networks, and click <Advanced> to configure the advanced attributes of the VPN connection.
+VUI_CreateWizardConName=Connection name(&N):
+VUI_CreateWizardADVAUTHN_CHECK=Get user name password from Smart Card(&A)
+VUI_CreateWizardMethod=Authen-method(&M):
+VUI_CreateWizardBtnCertSet=Cert-Settings(&W)...
+VUI_DoNotAccessingInternet=Do not allow accessing Internet
+
+VUI_StatusDisconnected=Disconnect(&O)
+VUI_StatusConnectedTime=Access Elapsed Time:
+VUI_StatusIP=Access IP address:
+VUI_Status=Status:
+VUI_StatusConnected=Connected
+VUI_StatusRuninfo=Running Information
+
+VUI_LOGONUserName=Username(&U):
+VUI_LOGONUserPwd=Password(&P):
+VUI_LOGONSavePwd=Save Password(&R)
+VUI_LOGONUserAdvAuth=Get username and password from smart card(&A)
+VUI_LOGONUsbAuth=Smart Card authN(&K)
+VUI_LOGONPin=PIN(&N):
+VUI_LOGONCerAuth=Certificate authN(&Q)
+VUI_LOGONCerSetting=Settings(&S)...
+VUI_LOGONConnect=Connect(&C)
+VUI_LogWndProperty=Properties...(&Y)
+VUI_LOGONBtnCertSet=Cert-Settings(&W)...
+VUI_LOGONRECCertCfg=Use certificate(&Q)
+VUI_VerifyCode=Verify code(&V):
+VUI_CertUserPwd=Get username and password from certificate(&T)
+
+VUI_OtherOption=Window Option
+VUI_OtherPopupWnd=Display logon dialog when enable the connection manually(&P)
+
+VUI_BASEPAGETITLE=Basic Settings
+VUI_L2TPPAGETITLE=L2TP Settings
+VUI_IPSECPAGETITLE=IPSec Settings
+VUI_IKEPAGETITLE=IKE Settings
+VUI_OTHERPAGETITLE=other
+
+VUI_CERYProperty=Certificate Property
+VUI_CERTSaveMatter=Certificate Store
+VUI_CERTUseSmartCard=Use my smart card
+VUI_CERTUseMyLocalCert=Use a certificate on this computer
+VUI_CERTSelectUserCert=Select a certificate...
+VUI_CERTSelectRootCert=Select a CA Certificate...
+VUI_CERTAuthServerOption=Validate Server Option 
+VUI_CERTAuthServerName=Validate server's name:
+
+VUI_USERPIN=User's PIN
+VUI_USERPINInput=Please type user's PIN(6-15 characters):
+VUI_SCSvrBAD=The smart card service which display name is "Smart Card" is not running. Cannot use certificates saved in it.Please retry after reboot the machine.
+VUI_EsafeSvrBAD=The smart card driver service which display name is "eSafe DeviceNotification service" is not running. Cannot use certificates saved in it.
+VUI_SmartCardBind=SmartCard Bind
+
+VUI_CERTSelectTitle=Select Certificate
+VUI_CERTSelectStatic=Please select a certificate you want to use.
+VUI_CERTSelectWarning=Please make sure you have selected a valid certificate.
+VUI_CERTSubject=Issued To
+VUI_CERTIssuer=Issued By
+VUI_CERTPurpose=Intended Purposes
+VUI_CERTExpDate=Expiration Date
+VUI_CERTUsageAll=<All>
+VUI_CERTUsageSvrAuth=Server Authentication
+VUI_CERTUsageClientAuth=Client Authentication
+VUI_CERTUsageCodeSigning=Code Signing
+VUI_CERTUsageEmailProtect=Secure Email
+VUI_CERTUsageIPSECEndSys=IPSEC End System
+VUI_CERTUsageIPSECTunnel=IPSEC Tunnel
+VUI_CERTUsageIPSECUser=IPSEC User
+VUI_CERTUsageTimeStamp=Time Stamping
+VUI_CERTUsageIKEIntermediate=IKE Intermediate
+VUI_CERTUsageKP_EFS=Encrypting File System
+VUI_CERTUsageKP_EFS_RECOVERY=Encrypting File System Recovery
+VUI_CERTUsageOther=Other Usages
+VUI_CERTErrUsercertCSP=You have selected using certificate authentication. Please click <Settings...> to perform related settings.
+VUI_TunnelPwdError=tunnel password error
+
+VUI_RouteSetting=Route Settings
+VUI_RouteDescription=Add the network address and mask
+VUI_Add=Add
+VUI_Delete=Delete
+VUI_IP=network address
+VUI_Mask=Mask
+VUI_AddRoute=Add Route
+VUI_DeleteRoute=Are you sure to delete the route?
+VUI_SelectRoute=Please select a route.
+VUI_IpOrMaskBlank=network address and mask cannot be empty.
+VUI_MaskError=The specified mask parameter is invalid. (network address & Mask) != network address.
+VUI_NetworkAddrRepeat=There is already a same network address.
+VUI_AddRoutePrincple=The network address and mask must satisfy (network address && Mask) = network address.
+
+VUI_VPNCfgFileError=This is not a correct configuration file.
+VUI_ImportCfgFromFile=Import VPN configuration from file
+VUI_ImportCfg=Import VPN Configuration
+VUI_SelectCfgFilePath=Select file path
+
+######### Security UI module (SUI) #########
+SUI_gszSumHeadPass=Passed successfully.
+SUI_gszSumHeadReMind=security check is passed but the security vulnerability exists.
+SUI_gszSumHeadIsolate=Does not meet security requirements and your computer is unable to access network resource beyond the quarantine region.
+SUI_gszSumHeadIsolatetimeout=Does not meet security requirements and your computer will be unable to access network resource beyond the quarantine region.
+SUI_gszSumHeadLogoff=Does not meet security requirements and current connection has been cut off.
+SUI_gszSumHeadLogofftimeout=Does not meet security requirements and current connection will be cut off.
+SUI_gszIsolateTimeoutHead=Your computer will be isolated to quarantine region in 
+SUI_gszIsolateTimeoutTail= seconds.
+SUI_gszLogoffTimeoutHead=Current connection will be cut off in 
+SUI_gszLogoffTimeoutTail= seconds.
+SUI_AVChkAbnomal=Abnormal
+SUI_AVChkNomal=Normal
+SUI_gszAVInstall=Antivirus software installation
+SUI_gszAVRun=Antivirus software running
+SUI_gszAVDefVer=Virus definition
+SUI_gszAVEngVer=Antivirus scan engine
+SUI_gszAVVirus=Virus check
+SUI_gszVirusStatus=Uncleared
+SUI_gszActionIsPassY=Yes
+SUI_gszActionIsPassN=No
+SUI_gszActionNotInvolved=Not involved
+SUI_gszActionREMIND=Remind
+SUI_gszActionISOLATE=Isolate
+SUI_gszActionOFFLINE=Offline
+SUI_gszStatusMANUAL=Waiting for manual repair
+SUI_gszStatusAUTO=Auto-repairing
+SUI_gszStatusSUCCESS=Auto-repair successfully
+SUI_gszStatusFAIL=Auto-repair failed
+SUI_gszVirusSummaryHint=Each virus' infomation are listed in the below table
+SUI_gszAVOK=Current antivirus software on your computer is compliant with security requirements.
+SUI_gszPatchOK=Current OS patches are compliant with security requirements.
+SUI_gszPatchFAIL1=Current OS is
+SUI_gszPatchFAIL2=,missing patches:
+SUI_gszBWOK=Software installation and running are compliant with security requirements.
+SUI_gszBWServicesOK=Services are compliant with security requirements.
+SUI_gszAVTblHeadRow1=Check list
+SUI_gszAVTblHeadRow2=Compliant with security requirements
+SUI_gszAVTblHeadRow3=Action
+SUI_gszAVTblHeadRow4=Status
+SUI_gszAVTblHeadRow5=Description
+SUI_gszAVUpdateURLtail=The URL for updating virus definition and antivirus scan engine is: 
+SUI_gszASUpdateURLtail=The URL for updating antispyware definition and scan engine is: 
+SUI_gszAPUpdateURLtail=The URL for updating or repairing antiphishing is: 
+SUI_gszFWUpdateURLtail=The URL for updating or repairing firewall is: 
+SUI_gszHDUpdateURLtail=The URL for updating or repairing harddisk encryption is: 
+SUI_gszAVUpdateHint=You are recommended to update the antivirus software using the scan engine and virus definition (if any) equipped with it.
+SUI_gszASUpdateHint=You are recommended to update the antispyware software using the scan engine and definition (if any) equipped with it.
+SUI_gszAPpdateHint=You are recommended to update or repair the antiphishing software.
+SUI_gszFWpdateHint=You are recommended to update or repair the firewall software.
+SUI_gszHDpdateHint=You are recommended to update or repair the harddisk encryption software.
+SUI_gszVirusTblHeadRow1=Name;
+SUI_gszVirusTblHeadRow2=Type
+SUI_gszVirusTblHeadRow3=Detected time
+SUI_gszVirusTblHeadRow4=Status
+SUI_gszPatchTblHeadRow=Patch Name
+SUI_gszPatchTblHeadRow1=Patch Info
+SUI_gszPatchTblHeadRow2=Action
+SUI_gszPatchTblHeadRow3=Status
+SUI_gszPatchUpdateURLtail=Please get requisite patches from the patch update server immediately.The server is 
+SUI_gszPatchUpdateHint=Please intall all of the requisite patches quickly to ensure that your computer and network are secure.
+SUI_gszPatchAbnormalhead=The causes for checking failure: 
+SUI_gszWITblHeadRow=Softwares required to be installed
+SUI_gszSoftwareTblHeadRow1=Compliant with security requirements
+SUI_gszSoftwareTblHeadRow2=Action
+SUI_gszSoftwareTblHeadRow3=Status
+SUI_gszBITblHeadRow=Softwares forbidden to be installed
+SUI_gszWRTblHeadRow=Softwares required to run
+SUI_gszBRTblHeadRow=Softwares forbidden to run
+SUI_gszWSTblHeadRow=Services required to run
+SUI_gszBSTblHeadRow=Services forbidden to run
+SUI_gszNetTblHeadRow=Net Stream
+
+SUI_SecCheckHeadHTML=Security Check Result:
+SUI_ConNameHtml=Connection name: 
+SUI_ChecktTimeHtml=Check time: 
+SUI_AVCheckHtml=Antivirus software check result
+SUI_OSPatchCheckHtml=Current OS patches check result
+SUI_SotfwareCheckHtml=Software installation and running check result
+SUI_ServicesCheckHtml=Services check result
+SUI_NetScanCheckHtml=NetStream check result
+SUI_WeakPwdCheckHtml=Windows Password check result
+SUI_RegCheckHtml=Register check result
+SUI_SecCheckTitleHTML=Security Check Result
+SUI_LanguageHtml=ISO-8859-1
+SUI_NetScanCheckHtmlOK=Current netstreams are compliant with security requirements.
+SUI_PwdCheckHtmlOK=Windows Password is compliant with security requirements.
+SUI_PwdCheckHtmlAbnormal=Windows Password is compliant with security requirements.
+SUI_NetScanCheckHtmlAbnormal=The causes for checking failure:
+SUI_NetScanIP=IP Stream
+SUI_NetScanNUCast=Broadcast Stream
+SUI_NetScanPKT=PKT Stream
+SUI_NetScanIPCon=TCP/UDP Connection Number
+SUI_RegisterCheckHtmlOK=Register Check is compliant with security requirements.
+SUI_gszRegTblHeadRow1=Check list
+SUI_gszRegTblHeadRow2=Compliant with security requirements
+SUI_gszRegTblHeadRow3=Action
+SUI_gszRegTblHeadRow4=Status
+SUI_gszRegTblHeadRow5=Description
+
+
+######### 8021.x auth module (XAU) #########
+
+
+
+
+######### Portal auth module (PAU) #########
+PAU_User_ActiveLogout_1=Network timed out.
+PAU_User_ActiveLogout_2=Received a logout request packet.
+PUI_PortalAuthFailed=Portal Authentication Failed.
+PAU_Connection_Already_Existed=Failed to set up a Portal connection due to existence of same connection.
+PAU_GetLocalIP_Failed=Failed to set up a Portal connection due to failure of obtaining local IP.
+PAU_CreateNicInfoError=Failed to set up a Portal connection due to failure of obtaining local NIC information.
+PAU_Cant_Connect_Server=Failed to communicate with Portal server.
+PAU_User_AlreadyOnLine=Portal authentication failed. Please try to disconnect the connection and start authentication again.
+PAU_NetError_AuthFailed=Portal authentication failed due to network error.
+PAU_AuthFailed_ErrCodeUnknown=Portal authentication failed,the error code is unknown.
+PAU_AuthFailed_Rejected=Portal authentication failed due to being rejected by server.
+PAU_AuthFailed_RenewIP=Portal authentication has failed due to network problems or no response from the portal server. Please contact the administrator.
+PAU_IllegalServer_AuthFailed=Portal authentication failed due to invalid Portal server.
+PAU_Processing_Another_Auth=Portal authentication failed for one user is in authentication process. Please try later.
+PAU_AuthFailed_ChallengeFault=Portal authentication failed,the error code is 4,please contact the administrator.
+PAU_AuthFailed_UserInfoError=Portal authentication failed due to user information error.
+PAU_AuthFailed_NetFault=Portal authentication failed due to network fault,please contact the administrator.
+PAU_Server_Ready_Stop=Portal authentication failed for the Portal server is shutting down.
+PAU_AuthFailed_ResMallocFailed=Portal authentication failed due to resource allocation failure.
+PAU_AuthFailed_Invalid_Client=The client version is invalid. Please use the version specified by the administrator and select Carry version info in the connection properties.
+PAU_HeartBeat_TimedOut=Network timed out for the user is off line.
+PAU_Force_Connection_Offline=Received a logout request packet. User logged out.
+PAU_StartAuthReq=Starting authentication request...
+PAU_UserOnline=User is on line.
+PAU_StartMallocRes=Starting to allocate resource...
+PAU_User_ActiveLogout=User logged out.
+PAU_CreateInvalidParam=Connection parameter error. Please re-set up a connection.
+PAU_CreateException=Connection parameter error. Please re-set up a connection.
+PAU_Auth_RefreshIPError=Failed to obtain the IP address of the selected NIC.
+PAU_GetSysInfo_TimedOut=Obtaining system information timed out.
+PAU_CreateErrParam=Connection parameter error. Please re-set up a connection.
+PAU_CreateErrDomain=Failed to set up a Portal connection due to nonexistence of domain.
+PAU_CreateTimedOut=Failed to set up a Portal connection due to network timeout.
+PAU_CreateSockError=Failed to set up a Portal connection due to network error, If reconnecting failed, Please restart the client and try again.
+PAU_CreateOnline=Failed to set up a Portal connection, please be sure that the network card is installed correctly or you are online.
+PAU_CreateGetIP=Failed to set up a Portal connection due to failure of obtaining local IP.
+PAU_50200_Reuse=The port(No.50200) has already been used by another process.
+PAU_NIC_NotReady=Portal authentication failed, because the NIC is not ready.
+PAU_WakeUp_RefreshIp=Begin to update IP.
+PAU_WakeUp_RefreshIpFailed=Failed to update IP, Please update your local IP and start authentication again. 
+PAU_Auth_GetMacError=Portal authentication failed due to getting MAC address error.   
+PAU_Auth_UNSUPPORT_EAP=Portal authentication failed. EAP authentication is not supported. Please contact your network administrator.
+
+PAU_NicCut=Connection disconnected, Your network adapter is disabled or the network cable is unplugged.
+PAU_NicRestore=Network is connected.
+
+#########  VPN auth module (VAU) #########
+VAU_ConfigureError=Connection cannot be created. Please check network configurations
+VAU_ConnDisconnected=Connection is disconnected
+VAU_StartUseSucc=The connection is successfully established.
+VAU_TipStart=Begin authentication
+VAU_TipStarting=Establishing a connection...
+VAU_StartUseFailed=Connection failed.
+VAU_IPSecServiceRunning=Windows IPSEC Services(IPSEC Services or IPsec Policy Agent) is running, please stop it and try again.
+VAU_IKEProposalError=IKE setting error
+VAU_IPSecProposalError=IPSec setting error
+VAU_IpsecAuthenticating=Processing Ike negotiation...
+VAU_L2TPAuthenticating=Creating tunnel and session...
+VAU_PPPAuthenticating=Getting IP address...
+VAU_StartErrorIKE=Ike negotiation failed
+VAU_StartErrorL2TP=Tunnel and session creation failed
+VAU_StartErrorPPP=Cann't get IP address
+VAU_StartErrorIKETimeout=Ike negotiation timeout,please check network config
+VAU_StartErrorL2TPTimeout=Tunnel and session creation timeout,please check network config
+VAU_StartErrorPPPTimeout=Get IP address timeout,please check network config
+VUI_InputValidIKEPort=IKE Port is error
+VUI_InvalidL2TPPort=L2TP Port Error
+VUI_IKEPort=IKE Port:
+VUT_L2TPPORT=L2TP Port
+
+
+
+######### Security auth module (SAU) #########
+SAU_UpdateActivityPrepair=Preparing patch check resources...
+SAU_UpdateActivityPrepairFail=Preparing patch check resources failed.
+SAU_UpdateActivityCheck=Patch check ongoing... 
+SAU_UpdateActivityCheckFail=Patch check failed.
+SAU_UpdateActivityDownload=Patch download ongoing...
+SAU_UpdateActivityDownloadFail=Patch download failed.
+SAU_UpdateActivityInstall=Patch installation ongoing...
+SAU_UpdateActivityInstallFail=Patch installation failed.
+SAU_UpdateActivityFinishNoPatch=Patch check completed with no lack of patches.
+SAU_UpdateActivityFinishNoRestart=Patch update completed.
+SAU_UpdateActivityFinishNeedRestart=You need to restart your computer to make the updates take effect.
+SAU_UpdateActivityAborted=Patch check or update aborted.
+SAU_NoDescription=No description.
+SAU_PamOnGoingPlsWait=Patch check and update is ongoing, please wait...
+SAU_PamDoneThenQuit=Patch check and update is done or aborted, now try to stop security check session...
+SAU_MsgLackMatchedFoldHead=No folder matching 
+SAU_MsgLackMatchedFoldTail= . Please confirm the installation or reinstall related plugins
+SAU_MsgPluginUpdateFailHead=Plugin loading update failed (
+SAU_MsgPluginUpdateFailTail=). The old plugin will not be replaced.
+SAU_MsgLackPluginDllHead=Lack plugin dll file 
+SAU_MsgLackPluginDllTail=.This may be caused by uninstalling the old plugin. if the new plugin is installed, click the red cross button to restart the security check.
+SAU_MsgUnknownInfo=[Unknown]
+SAU_MsgUnknownError=Unknown error
+SAU_MsgAvInfoHead=Antivirus software name: 
+SAU_MsgAvInfoTail=, Version: 
+SAU_MsgAvCallingFailHead=Failed to call antivirus plugin. Error code is: 
+SAU_MsgAvCallingFailTail=. No further information from AV-plugin.
+SAU_MsgCurOSPatchInfoHead=Current OS: 
+SAU_MsgCurOSPatchInfoTail1=, and there is no updated Windows patches
+SAU_MsgCurOSPatchInfoMid=Releast date of the latest patch is 
+SAU_MsgCurOSPatchInfoTail2=, and the latest update patches include: 
+SAU_MsgLackOSPatchInfoHead=The sum of missing patches: 
+SAU_MsgLackOSPatchInfoTail=. The information of patches is as follows: 
+SAU_MsgPamInitFail=Initializing patch check tool failed and thus the patch will not be checked.
+SAU_MsgCommonAbortSecuthTail=. Cannot pass security check.
+SAU_MsgSecauthFailGeneral=Security check is not passed and the unqualified check items are: 
+SAU_MsgSecauthWarningGeneral=Security vulnerabilities are : 
+SAU_MsgVirusDefBelowDemand=Current virus definition version is lower than the lowest version required
+SAU_MsgVirusEngBelowDemand=Current virus scan engine version is lower than the lowest version required
+SAU_MsgOSLackPatches=Current operating system lacks the required patches
+SAU_MsgVirusExist=Some viruses are found in the current operating system
+SAU_MsgSoftwareCheckFoul=Software installation or running state violation against security requirements
+SAU_MsgSecauthForDetail=Click [Latest Security Check Result] button for detailed information.
+SAU_MsgSecauthChecklist=Items to be checked in this security check are: 
+SAU_MsgAVRelatedCheck=The check about antivirus
+SAU_MsgNeedVirusDef=Virus definition version
+SAU_MsgNeedVirusEng=Virus scan engine version
+SAU_MsgNeedPatchCheck=System patch update state
+SAU_MsgNeedKillVirus=Kill virus and analyze the result
+SAU_AbnrmlAVKillPlugin=Antivirus plugin error, cannot initiate virus-scan task
+SAU_MsgPamSetServerFail=Setting patch server failed and thus the patch will not be checked.
+SAU_MsgPamStartUpdateServiceFail=Starting Automatic Updates Service failed and thus the patch will not be checked.
+SAU_MsgPamStartBITSServiceFail=Starting Background Intelligent Transfer Service failed and thus the patch will not be checked.
+SAU_MsgPamStartUpdateFail=Starting patch check failed and thus the patch will not be checked.
+SAU_MsgPamGetStatusFail=Getting patch update status failed and thus the patch will not be checked.
+SAU_MsgPamCurrentStatus=Current progress of patch check and update: 
+SAU_MsgAvClientNotAllowed=The anti-virus client currently in use is not required by EAD strategy.
+SAU_PamLackDll=The patch dynamic link library is lacked. Please check whether this client version support the patch link function.
+SAU_OfflinePortal=Your computer is unable to access network resource beyond the quarantine region now.
+SAU_XML_OfflinePortal=Security check can not be executed, so current session closed.
+SAU_RepairWhileNotIsolated=Warning: Please finish all the required repairing work quickly because you are allowed to access network normally only for 
+SAU_HoursMid= hour(s) 
+SAU_MinutesMid= minute(s) 
+SAU_SecondsEnd= second(s).
+SAU_MsgPlsResume=Please resume security check after security check requirement is meeted.
+SAU_MsgPlsResumePortal=Please make sure security check is resumed after the security check requirements are meeted.
+SAU_MsgSecRemind=Note: Please update the security vulnerability of the report in time.
+SAU_MsgAutoResumeHint=The system will resume security check automatically.
+SAU_MsgSecAutoUpdateDone=Auto update task is completed. Security vulnerability is eliminated.
+SAU_MsgSecFoundAlarm=Security vulnerability has been found in your computer
+SAU_MsgSecFoundAlarmChg=Note: security vulnerability information is changed.
+SAU_MsgSecAlarmOff=Note: security vulnerability is eliminated.
+SAU_MsgAbortOnlineReq=No response is received from the server, and you will be forced to log off. Please check whether the terminal can properly access the network, or contact with the administrator. 
+SAU_MsgSecurityServerDumbN=No response is received from the server, and your computer can access only the resources in the quarantine area. Please check whether the terminal can properly access the network, or contact with the administrator. 
+SAU_MsgSecurityServerDumbY=No response is received from the server, and you failed to pass the security check. Please check whether the terminal can properly access the network, or contact with the administrator. 
+SAU_MsgNoSecCheckRequest=No request for security check.
+SAU_MsgPassSecauthHint=Security check is passed.
+SAU_MsgPassSecauthWithHD=Security check is passed but the security vulnerability exists.
+SAU_MsgPassOnlineResecauthHint=Online check is passed.
+SAU_MsgPassOnlineResecauthWithHD=Online check is passed but the security vulnerability exists.
+SAU_MsgAbortOnlineResecauth=The antivirus task for last check is still ongoing, so abort this online check.
+SAU_MsgInvalidChecklist=Invalid check parameters:
+SAU_MsgAlreadyEndSecauth=Security check session ended.
+SAU_MsgUserPCIsolated=Your computer has been isolated to the quarantine region.
+SAU_IssInvalidIP=Cannot communicate with EAD server, local IP address is invalid.
+SAU_IssWsaStartFail=Cannot communicate with EAD server, socket initialization failed.
+SAU_IssSocketFail=Cannot communicate with EAD server, socket creation failed.
+SAU_IssSckbindExcept=Cannot communicate with EAD server, socket binding exception.
+SAU_IssSckbindTimeout=Cannot communicate with EAD server, socket binding timed out.
+SAU_IssSckbindFail=Cannot communicate with EAD server, socket binding failed.
+SAU_FileType53=File Type
+SAU_MemoryType54=Memory Type
+SAU_BootSecType55=Boot Sector Type
+SAU_MailType56=Mail Type
+SAU_MacroType=Macro Type
+SAU_UnknownType57=Unknown Type
+SAU_OpenTemplateFileErr72=Failed to open the template file and generate a summary file of operation after authentication.
+SAU_FailMsgHead=Security vulnerability detected,information from administrator: 
+SAU_AVFailMsgHead=Security vulnerability detected in antivirus check,information from administrator: 
+SAU_ASFailMsgHead=Security vulnerability detected in antispyware check,information from administrator: 
+SAU_APFailMsgHead=Security vulnerability detected in antiphishing check,information from administrator: 
+SAU_FWFailMsgHead=Security vulnerability detected in firewall check,information from administrator: 
+SAU_HDFailMsgHead=Security vulnerability detected in harddisk encryption check,information from administrator: 
+SAU_PMFailMsgHead=Security vulnerability detected in patch management check,information from administrator: 
+SAU_PatchFailMsgHead=Security vulnerability detected in patch check,information from administrator: 
+SAU_SoftFailMsgHead=Security vulnerability detected in software control check,information from administrator: 
+SAU_RegCheckFailMsgHead=Security vulnerability detected in register check,information from administrator: 
+SAU_WeakPwdCheckFailMsgHead=Security vulnerability detected in Winlogon Password check,information from administrator: 
+SAU_SyncUserErr=Security authentication failed, and the current connection will be disconnected. Please contact with the administrator. 
+SAU_SyncHostNameErr=The host name is error. Current connection will be cut off.
+SAU_PktTooLargeErr=The security check failed because of too many security check items. Please contact the administrator.
+SAU_SyncDomainBindErr=Error occured for your computer does not bind to domain required. Current connection will be cut off.
+SAU_SyncDomainLogonErr=Error occured for your computer does not logon domain required. Current connection will be cut off.
+SAU_CountOfflineHint=you are allowed to access network only for
+SAU_OfflineTimeEnd=Error occured for your computer does not logon at the right time. Current connection will be cut off.
+SAU_OfflineEADError=Current connection will be cut off due to EAD component not authorized while the service required. Please contact with the net manager.
+SAU_MsgProxyIPInvalid=Online request can not get through due to invalid acquired proxy server IP address
+SAU_MsgProxyPortInvalid=Online request can not get through due to invalid acquired proxy server port number
+SAU_PamInvalidDll=Invalid patch DLL
+SAU_PamLackMem=Initializing patch DLL failed
+SAU_MsgNonAVPluginNotReady=non-antivirus plugin is not ready.
+SAU_MsgAVPluginNotReady=antivirus plugin is not ready.
+SAU_MsgServerDumb=there is no response from EAD server.
+SAU_MsgAVClientNonSupportQuery=antivirus client does not support query:
+SAU_MsgAVClientNotWork=antivirus client exception
+SAU_MsgMemNewFail=Dynamic memory allocation failed
+SAU_MsgThreadCreateFail=Failed to create thread
+SAU_MsgMutexCreateFail=Failed to create MUTEX
+SAU_NoAllowedAVHead=Lack of antivirus software required by EAD strategy on your computer. You need to install one of them: 
+SAU_NoAllowedASHead=Lack of antispyware software required by EAD strategy on your computer. You need to install one of them: 
+SAU_NoAllowedAPHead=Lack of antiphishing software required by EAD strategy on your computer. You need to install one of them: 
+SAU_NoAllowedFWHead=Lack of firewall software required by EAD strategy on your computer. You need to install one of them: 
+SAU_NoAllowedHDHead=Lack of harddisk encryption software required by EAD strategy on your computer. You need to install one of them: 
+SAU_NoAllowedPMHead=Lack of patch management software required by EAD strategy on your computer. You need to install one of them: 
+SAU_ErrNoEnvVariable=Environment variables are missing
+SAU_ErrNoMainCfgFile=There is no main configuration file. Please reinstall the client.
+SAU_ErrMissingItem=There is no configuration items in the main configuration file. Please reinstall the client.
+SAU_ErrInvalidItem=The value of configuration item is invalid. Please reinstall the client.
+SAU_ErrNoPlugin=There is no plugin settings in the main configuration file. Please reinstall the client.
+SAU_ErrMemNewFail=Dynamic memory allocation failed.
+SAU_ErrLackPlugin=There is no plugin type in the main configuration file. Please reinstall the client.
+SAU_ErrLackAVPlugin=Lack of antivirus. Please reinstall the client.
+SAU_ErrAVPluginNotInstall=Lack of antivirus plugin
+SAU_ErrPluginNotInstall=Lack of non-antivirus plugin
+SAU_ErrConflictiveType=The plug type in the plugin configuration file is incorrect
+SAU_ErrNoDllName=There is no dll file name in the plugin configuration file.
+SAU_ErrNoProductName=There is no product name in the plugin configuration file.
+SAU_ErrNoVersionInfo=There is no plugin version in the plugin configuration file.
+SAU_ErrDllInvalid=The specified dll file in the plugin configuration file is invalid.
+SAU_ErrDllVersionInfo=The dll file version in the plugin configuration file is invalid.
+SAU_ErrConflictiveVersion=The dll file version does not match the one in the plugin configuration file.
+SAU_ErrConflictiveName=The product information of dll file does not matche the one in the plugin configuration file.
+SAU_ErrPluginMountFail=The installation directory does not exist, or there is no plugin configuration file under the installation directory.
+SAU_ErrNewPluginVersionFail=The version of the new plugin to be loaded under the installation directory is the same with or lower than that of the old plugin.
+SAU_ErrInvalidPath=Directory does not exist.
+SAU_ErrDelFileFail=Failed to delete file
+SAU_ErrLoadDllFail=Failed to load DLL library
+SAU_ErrInvalidDll=DLL library does not provide interface functions
+SAU_ErrPluginInitFail=Failed to initialize DLL library
+SAU_ErrPluginNotWork=DLL library does not work properly
+SAU_VirusKill=Kill virus
+SAU_ReferVirusTaskWait=Virus-scan task is submitted successfully, please wait...
+SAU_VirusTaskOverNoWarnings=Virus-scan task is completed. No alarm information is found.
+SAU_VirusTaskFailHead=The antivirus task failed (
+SAU_RightBracket=) 
+SAU_Comma=,
+SAU_AVSeparator=, 
+SAU_VirusTaskOverReportResults=Virus-scan task is completed and the result will be reported
+SAU_VirusTaskOverNoResults=Virus-scan task is completed but getting result failed:
+SAU_VirusTaskReferFail=Failed to submit the virus-scan task (
+SAU_InstallAVSoft=Antivirus software currently in use on your computer: 
+SAU_InstallASSoft=Antispyware software currently in use on your computer: 
+SAU_InstallAPSoft=Antiphishing software currently in use on your computer: 
+SAU_InstallFWSoft=Firewall software currently in use on your computer: 
+SAU_InstallHDSoft=Harddisk Encryption software currently in use on your computer: 
+SAU_InstallPMSoft=Patch Management software currently in use on your computer: 
+SAU_Check=Currently 
+SAU_AbnormalToretryWait= is not running. Please wait while trying to start it...
+SAU_AbnormalNotsafeBesureSoftOk= is not running. Cannot pass the security check. Please ensure that the software runs normally.
+SAU_AbnormalBesureSoftOk= is not running. Please ensure that the software runs normally.
+SAU_NormalVersion= is running (
+SAU_AbnormalVersion= is not running (
+SAU_NormalVersionVirus=Virus definition version: 
+SAU_ScanEngVersion=Scan engine version: 
+SAU_NormalVersionDef=Definition version:
+SAU_ProgramVersion=Program version: 
+SAU_LeftBracket=(
+SAU_NoAvSoftNotSafeInstallForsafe=No required antivirus software is installed in your computer. Security check is not passed. Please install the software quickly to ensure that your computer and network are secure.
+SAU_NoASSoftNotSafeInstallForsafe=No required antispyware software is installed in your computer. Security check is not passed. Please install the software quickly to ensure that your computer and network are secure.
+SAU_NoAPSoftNotSafeInstallForsafe=No required antiphishing software is installed in your computer. Security check is not passed. Please install the software quickly to ensure that your computer and network are secure.
+SAU_NoFWSoftNotSafeInstallForsafe=No required firewall software is installed in your computer. Security check is not passed. Please install the software quickly to ensure that your computer and network are secure.
+SAU_NoHDSoftNotSafeInstallForsafe=No required harddisk encryption software is installed in your computer. Security check is not passed. Please install the software quickly to ensure that your computer and network are secure.
+SAU_NoAVSoftNptSafeWarning=No required antivirus software is installed in the computer. Security check is not passed. Please install the software to ensure that your computer and network are secure.
+SAU_NoASSoftNptSafeWarning=No required antispyware software is installed in the computer. Security check is not passed. Please install the software to ensure that your computer and network are secure.
+SAU_NoAPSoftNptSafeWarning=No required antiphishing software is installed in the computer. Security check is not passed. Please install the software to ensure that your computer and network are secure.
+SAU_NoFWSoftNptSafeWarning=No required firewall software is installed in the computer. Security check is not passed. Please install the software to ensure that your computer and network are secure.
+SAU_NoHDSoftNptSafeWarning=No required harddisk encryption software is installed in the computer. Security check is not passed. Please install the software to ensure that your computer and network are secure.
+SAU_NoPMSoftNptSafeWarning=No required patch management software is installed in the computer. Security check is not passed. Please install the software to ensure that your computer and network are secure.
+SAU_NoAVSoftNptSafeWarningTail=. Please install the software to ensure that your computer and network are secure.
+SAU_InnerProgramErrHead=Failed to send the internal message (Error code is:
+SAU_LackPatchServer=There is no patch server and thus the patch cannot be checked
+SAU_AVQueryFailHead=QUERY (
+SAU_AVQueryFailTail=) failed: 
+SAU_ForChangePasswordHead=The request of changing user password
+SAU_InARow=In a row 
+SAU_HeartBeatsNotRespond= heartbeat packets got no response and reauthentication will start.
+SAU_MsgAVAutoUpdateOverButNGHead1=Virus definition version after automatical update (
+SAU_MsgAVAutoUpdateOverButNGHead2=The antivirus engine version after automatical update (
+SAU_MsgAVAutoUpdateOverButNGMid=) and antivirus engine version (
+SAU_MsgAVAutoUpdateOverButNGTail=) does not meet security requirements yet. Please contact the system administrator.
+SAU_MsgRISING=Rising AntiVirus
+SAU_MsgKingsoft=Kingsoft AntiVirus
+SAU_MsgJIANGMIN=Jiangmin AntiVirus
+SAU_MsgCurAVSoft=Current antiVirus software
+SAU_MsgSecauthResultTitle=Security check result for your computer: 
+SAU_MsgDetailTailTitle= For details, please click the [Latest security check result] button on the toolbar to show the latest security check result page.
+SAU_MsgCurVirusDefHead=Current version: 
+SAU_MsgCurVirusNoHead=no required AntiVirus soft installed
+SAU_MsgCurVirusDefHeadNODef=Current has no Version
+SAU_MsgCurScanEngHead=Current version: 
+SAU_MsgCurVirusEngHeadNODef=Current has no Version
+SAU_MsgEntryVersionTail=, Lowest version required: 
+SAU_MsgOSPatchNG=Patch check is not qualified and the following patches are lacked: 
+SAU_MsgNoDescInfo=[No Description]
+SAU_MsgSecauthFailForDetail=Security check is not passed.
+SAU_MsgOfflineInfoTail=minute(s) current connection will be cut off.
+SAU_MsgIsolateInfoTail=minute(s) it will be unable to access network resource beyond the quarantine region.
+SAU_MsgIsolateInfoHead=Your computer does not meet security requirements and in 
+SAU_MsgOfflineInfo=Your computer does not meet security requirements and current connection will be cut off right away.
+SAU_MsgIsolateInfo=Your computer does not meet security requirements and it will be unable to access network resource beyond the quarantine region.
+SAU_MsgCHGPasswdNG=Failed to change password.
+SAU_MsgCHGPasswdOK=Password changed successfully.
+SAU_MsgOfflineFromServer=Administrator requires the user to log off.
+SAU_MsgHintFromServer=Administrator hints the user:  
+SAU_MsgReauth1=EAD server detects that the current session is off, a new one will be started soon.
+SAU_MsgStartSecauthHint=Start security check session...
+SAU_MsgInvalidXMLDoc=The pending format of XML documents does not meet the requirements.
+SAU_MsgXMLParserInitFailed=Initializing XML parser failed. Please repair manually.
+SAU_MsgXMLParserFailed=XML parser failed for parsing the packet.
+SAU_MsgAVDefUpdateCommitFinish=The task of updating virus definition and antivirus engine finished.
+SAU_MsgAVDefUpdateFailedHead=The task of updating virus definition and antivirus engine failed: 
+SAU_MsgAVDefUpdateCommitOK=The task of updating virus definition and antivirus engine has been submitted successfully, please wait...
+SAU_MsgTaskNameAVDefUpdate=Virus definition and antivirus engine update
+SAU_MsgMonTaskCommitFailedHead=Failed to submit the task of setting monitor strategy: 
+SAU_MsgMonSettingFailedHead=Failed to set the monitor strategy: 
+SAU_MsgTaskNameSetMon=Settings of monitor strategy
+SAU_MsgFailSettingMonitor=Cannot set the strategy of virus monitor
+SAU_MsgAVRunNGTail= Running state: Abnormal
+SAU_MsgNETSCANFAIL=Net Stream is abnormal
+SAU_MsgWeakPwdFAIL=The password of Logon don't match the complex rule
+SAU_MsgRegCheckFAIL=The Register is abnormal
+SAU_MsgPwdDicFail=The file has broken, please start on line to repair such error.
+SAU_AccStatus=AccChecker status:
+SAU_NotInstalled= (#)  not installed
+SAU_LowerVer= (#) version is lower than required
+SAU_AssetNumNotSet= (#) machine asset number is not filled
+SAU_AnotherPamOngoing=Wait current patch check launched by another security check session to complete
+SAU_PamDowloadAndInstalling=Wait current patch check tool to download and install
+SAU_PamDowloadAndInstallSucc=patch check tool has already installed
+SAU_PamDowloadAndInstallFail=patch check tool fail to install
+
+######### service center module (SRV) #########
+SRV_TimeFmt=%d year %02d month %02d day %02d hour(s) %02d minute(s) %02d second(s)
+SRV_PtIniFailed=Initialization failed for this protocol, so the requested operation cannot be executed.
+SRV_PtIniFailedForVPN=Initialization failed for this protocol, please ensure the virtual nic is enabled and restart the client.
+SRV_PtIniFailedForPortErr=Initialization failed for this protocol, because the port(50200) is used by another process.
+#SRV_DomainInfoInval There is no proper information in Logon-once connection. Cannot start an authentication.
+SRV_NotAdminCannotUpdate=You do not have administrative privileges on this computer, online update cannot run.
+
+SRV_ClientBeingExit=Waiting for the program to exit...
+
+SRV_CompChkFoul=Component check foul
+SRV_ProtoCompTrialOut=Current connection will be cut off due to component trial period expiration.
+SRV_EadCompTrialOut=Security check session will not be started (or will be cut off if started before) due to component trial period expiration.
+
+SRV_ProtoCompUserSumFoul=Current connection will be cut off due to limitation on number of users to correlative component.
+SRV_EadCompUserSumFoul=Security check session will not be started (or will be cut off if started before) due to limitation on number of users to correlative component.
+
+SRV_IllegalClient=Current iNode client is not authorized. Please use an authorized one.
+SRV_ProtoStampError=Current connection will be cut off due to unreachable iNode management center.
+SRV_EadStampError=Security check session will not be started (or will be cut off if started before) due to unreachable iNode management center.
+SRV_LicNotEffective=Current iNode license has been invalidated.
+SRV_CompoNotAuthorized=Current connection will be cut off due to component not authorized.
+
+
+#########  control center module (CTL) #########
+
+
+
+
+#########  GINA module (GNA) #########
+GNA_BeginDomAuthWait=Network access auth is ongoing. Please wait...
+GNA_DomAuthFail=Logon-once authentication failed.
+GNA_ErrHint=Error hint
+
+#########  wireless auth module (WAU) #########
+WAU_StartAssocOpen=Connecting to open network
+WAU_StartAssocSecure=Connecting to security network
+WAU_AssocOpen=Connected to open network
+WAU_StartKeyNegotiate=Start negotiating network encryption key
+WAU_AssocKeyFailed=Failed to connect to current security network
+WAU_AssocKeyOK=Connected to current security network
+
+WAU_NoSsid=Failed to connect to wireless network ---- invalid SSID
+WAU_Wpa2NotSupported=Failed to connect to wireless network with WPA2 ---- current wireless network interface card does not support WPA2.
+WAU_ConnTimeout=Failed to connect to wireless network, please make sure security mode and encryption type are set correctly.
+
+WAU_ConnCutOff=Wireless network is disconnected
+WAU_DisassocUserReq=On user request
+WAU_DisassocInvalidIe=Key handshake failed
+WAU_8021X_FAIL=User identification authentication (802.1X) failed
+WAU_KeyShakeFail=Time out for key handshake
+WAU_8021X_Timeout=Time out for user identification authentication (802.1X)
+WAU_DisassocCipherChg=Cipher suite is changed for current network. Please re-connect.
+WAU_DisassocUnknown=Unknown reason
+
+WAU_NetIsConnected=Connected to network
+WAU_NetMightNotAvailable=Current connection was caused by the NIC or other client. If the network is still unavailable, please cut off the connection and start it again using current client.
+
+WAU_NoWirelessDev=No wireless network adapter was found.
+
+#########  wireless module (CTL) #########
+WLAN_ConnOpGroupName=Wireless Connection Operations
+WLAN_Conn2WirelessCmd=Connect to Wireless Network
+WLAN_CreateWirelessConnCmd=Setup Wireless Network Connection
+WLAN_Conn2WirelessMenuCmd=Connect to Wireless Network(&B)
+WLAN_CreateWirelessConnMenuCmd=Setup Wireless Network Connection(&D)
+WLAN_NotFindWirelessAdapter=Can not detect the wireless adapter.
+WLAN_RefreshWireless=Refresh Wireless Network(&F)
+WLAN_RefreshWirelessCmd=Refresh Wireless Network
+WLAN_SecTypeColumn=Security Type
+WLAN_SignalColumn=Signal
+WLAN_ConnectedSta=Connected
+WLAN_DisconnectedSta=Disconnected
+WLAN_StatusStatic=Status
+
+WLAN_SignalNo=No Signal
+WLAN_SignalExcellent=Excellent
+WLAN_SignalVeryGood=Very Good
+WLAN_SignalGood=Good
+WLAN_SignalLow=Low
+WLAN_SignalVeryLow=Very Low
+
+WLAN_NetworkTypeStatic=Network:
+WLAN_AuthTypeStatic=Authentication(&E):
+WLAN_EncTypeStatic=Encryption Type(&H):
+WLAN_SecKeyStatic=Security Key(&K):
+WLAN_KeyIndexStatic=Key Index(&I):
+
+WLAN_KeyorPwd=Please input the security key or password:
+WLAN_WPAX1PgBtn=802.1X Properties(&X)
+WLAN_WPAX1PgTitle=802.1X Properties
+WLAN_WPAX1NetworkSetting=Network Settings
+WLAN_WPAX1UserSetting=Account Settings
+
+WLAN_NetworkKeyStatic=Network Key(&K):
+WLAN_CfmNetworkKeyStatic=Confirm Network Key(&C):
+WLAN_LogHintStatic=Network requires you to input the key.
+
+WLAN_CreateWirelessWzdTitle=Setup wireless network connection wizard
+WLAN_CreateWirelessWzd=Setup a wireless network connection
+WLAN_CreateWirelessWzdTips=Input the information of wireless network connection you want to add.
+WLAN_CreateWirelessWzd2Tips=Input the 802.1X information of wireless network connection you want to add.
+WLAN_CreateWirelessSucc=Set up a wireless network connection successfully.
+WLAN_SaveWireless=Save the wireless network(&S)
+
+WLAN_StatusPgTitle=Wireless Adapter Status
+WLAN_AssoComboxStatic=Association Infomation
+WLAN_EncComboxStatic=Encryption Information
+WLAN_NETComboxStatic=Network Information
+
+WLAN_AuthTypeStaticNoHotKey=Authentication Type:
+WLAN_EncTypeStaticNoHotKey=Encryption Type:
+
+WLAN_NetworkTypeStatic=Network:
+WLAN_SupportedRatesStatic=Supported Rates:
+
+WLAN_CreateBtn=Create
+WLAN_ConnWirelessAutoChk=Connect to this wireless network automatically(&T)
+WLAN_InvalidKey=Invalid key, please try again.
+WLAN_SaveKeyChk=Save the key or password(&F)
+
+WLAN_InputSsidPls=Please input SSID.
+WLAN_InputKeyPwdPls=Please input the network key or password.
+WLAN_InputNetKeyPls=Please input the network key.
+WLAN_InputCfmNetKeyPls=Please input the confirm network key.
+
+WLAN_MenuSaveWl=Save Wireless Network(&S)
+
+WLAN_MenuWlStatus=Wireless Adapter Status(&S)
+WLAN_ViewWLAdapterStatusConnCmd=View Wireless Adapter Status
+WLAN_CannotRefreshWireless=No wireless network available.
+WLAN_PwdNotMatch=The password and the confirm password do not match. Please try again.
+WLAN_EncStatus=Encryption Status:
+WLAN_SelEncType=Please select the encryption type.
+
+WLAN_EncNo=No
+WLAN_EncNotSupp=Encryption Not Supported
+WLAN_KeyNegotiating=Negotiating Key
+WLAN_KeyTooShort=The shortest length of the key is 8. 
+WLAN_KeyTooLong=The length of the key can not be larger than 63.
+WLAN_ConnectedAndSecSta=Connected and passed security check.
+WLAN_ConnectedNotSecSta=Connected but not passed security check.
+
+WLAN_NoWireProtoCus=The client is not authorized to use wired component.
+WLAN_HasAssociated=The other wireless network has been associated already.\n Please disconnect the current association.
+WLAN_WlanMngInfo=You select Windows to manage wireless,so you can't use iNode to associate wireless.\n Please check [Operation/Use Windows to manage wireless] and make sure this item is unchecked. 
+
+######### DAMA  UI module (DUI)  公共部分的资源#########
+DUI_DosGetOnline=Connected to the DAM server
+DUI_DosGetOffline=Disconnected to the DAM server
+DUI_ArsGetDone=Asset registration done
+DUI_ArsGetUndone=Asset registration pending
+
+DUI_DlgTitile_ConfirmAssetInfo=Confirm Asset Info
+DUI_ConfirmAssetInfo_Hint=If the following info does not match with current computer, please click 'Cancel' to input a new asset number. 
+DUI_ConfirmAssetInfo_Hint2=If the following info does not match with current computer, please contact your system manager.
+DUI_DlgTitile_InputAssetInfo=Input Asset Info
+DUI_InputAssetInfo_Hint=Please fill in the following info sheet for current computer correctly:
+
+DUI_DlgtTitle_SoftToInstall=Software Distribution Management
+DUI_SoftwareName=Software Name
+DUI_SoftwareVersion=Version
+DUI_InstallStatus=Install Status
+DUI_Wait2Install=Wait to install
+DUI_Installed=Installed
+DUI_InstallUnknown=Unknown
+DUI_InstallFail=Failed or time out
+DUI_InstallStartFail=Failed to start install program
+DUI_Installing=Installing, not finished
+DUI_SoftwareList=Software List
+DUI_InstallMode=Install Mode
+DUI_InstallMode_Green=Green
+DUI_InstallMode_Slience=Slience
+DUI_InstallMode_Interactive=Interactive
+DUI_DownloadStatus=Download Status
+DUI_DownloadStatus_Success=Success
+DUI_DownloadStatus_FAIL=Wait to try next time
+DUI_DownloadStatus_Unfinished=Unfinished
+DUI_ShowInstSoft=Show Installed Software(s)
+DUI_InstallHint=Hint: Double click on certain software name in list to start to install it. If you end the installation by mistake or purpose, it might take a few minutes for DAM Agent to detect that. Please be patient for a while.
+
+DUI_StatusInfo=Status Information
+DUI_ConnStatus=Connection Status: 
+DUI_RegStatus=Asset Register Status: 
+DUI_DamOnline=Online
+DUI_DamOffline=Offline
+DUI_Registered=Registered
+DUI_Unregistered=Unregistered
+
+DUI_Input_AssetNo=Input Asset Number
+DUI_AssetNo=AssetNo:
+DUI_AssetOwner=Asset Owner:
+DUI_AssetGroup=Asset Group:
+DUI_AssetConfig=Model:
+DUI_AssetPosition=Position:
+DUI_AssetVendor=Vendor:
+DUI_AssetType=Type:
+DUI_AssetDescrip=Description:
+DUI_AssetType_PC=PC
+DUI_AssetType_LAPTOP=Laptop
+DUI_AssetType_WORKSTATION=WorkStation
+DUI_AssetType_SERVER=Server
+DUI_AssetType_OTHER=Other
+
+DUI_InvalidAsset_TryAgain=Invalid asset number. Please try again.
+DUI_AssetTaken_TryAgain=The asset number is taken. Please input your asset number correctly.
+DUI_PlsInputAssetId=Please input asset number for current computer correctly.
+
+DUI_AssetInfo_FillHint=The items labeled with asterisk(*) cannot be left empty.
+
+######## DAMA  UI module (DUI)  与iNode融合版本的额外资源###########
+DUI_DlgtTitle_Status=DAM Agent Status
+DUI_DamRunStatus=Runing Status: 
+DUI_DamRuning=Running
+DUI_DamStopped=Stopped
+
+
+ 
+##### Linux/Mac iNode resource , by g02084, 2009-6-1 ############
+MAC_LINUX_NAME=iNode Intelligent Client
+MAC_LINUX_DESCRIPTION_HP=iNode Intelligent Client (JF388A)
+MAC_LINUX_DESCRIPTION_H3C=iNode Intelligent Client
+MAC_LINUX_VERSION=Version
+MAC_LINUX_VERSION_NAME=iNode
+MAC_LINUX_VERSION_DETAIL_SHOW=PC 7.1 (E0305)
+MAC_LINUX_INTERNAL_VERSION_DETAIL_SHOW=V700R003B03D009 
+MAC_LINUX_VERSION_DETAIL=7.10-E0305
+MAC_LINUX_PRODUCTOR_H3C=Copyright (c) 2004-2015 Hangzhou H3C Technologies Co., Ltd.
+MAC_LINUX_PRODUCTOR_HP=Copyright (c) 2007-2015 Hewlett-Packard Development Company, L.P. and its licensors.
+MAC_LINUX_USEDTIME=Duration
+
+##### Menu and tool bar #####
+MAC_LINUX_FILE=&File
+MAC_LINUX_NEW_CONNECTION=&New Connection
+MAC_LINUX_NEW_CONNECTION_DES=New Connection
+MAC_LINUX_DELETE=&Delete
+MAC_LINUX_DELETE_DES=Delete
+MAC_LINUX_RENAME=&Rename
+MAC_LINUX_RENAME_DES=Rename
+MAC_LINUX_PROPERTY=&Property
+MAC_LINUX_PROPERTY_DES=Property
+MAC_LINUX_CONNECT=&Connect
+MAC_LINUX_CONNECT_DES=Connect
+MAC_LINUX_DIS_CONNECT=D&isconnect
+MAC_LINUX_DIS_CONNECT_DES=Disconnect
+MAC_LINUX_EXIT=&Exit
+MAC_LINUX_EXIT_DES=Exit
+MAC_LINUX_OPERATION=&Operation
+MAC_LINUX_OPERATION_DES=Operation
+MAC_LINUX_CLIENTS_SETTING=Client &Settings
+MAC_LINUX_CLIENTS_SETTING_DES=Client Settings
+MAC_LINUX_HELP=&Help
+MAC_LINUX_HELP_DES=Help
+MAC_LINUX_ABOUT=About
+MAC_LINUX_ABOUT_DES=About
+MAC_LINUX_SECTRAP=&Trigger security check
+MAC_LINUX_SECTRAP_DES=Trigger security check
+
+##### Button resource #########################################
+MAC_LINUX_BUTTON_OK=OK
+MAC_LINUX_BUTTON_CANCEL=Cancel
+
+MAC_LINUX_BUTTON_CONNECT=Connect
+MAC_LINUX_BUTTON_CLOSE=Close
+
+####### Property Dialog #########################################
+MAC_LINUX_DIALOG_TITLE_CREATE_NEW=Create New Connection
+MAC_LINUX_DIALOG_TITLE_PROPERTY=Property
+MAC_LINUX_CONNECTION_NAME=Connection name
+MAC_LINUX_USERNAME=Username
+MAC_LINUX_PASSWORD=Password
+MAC_LINUX_SAVE_PASSWORD=Save username and password
+MAC_LINUX_EnableRSAChk=Enable RSA dynamic key
+MAC_LINUX_RSAKeyStatic=RSA key
+MAC_LINUX_SELECT_NIC=Select NIC
+MAC_LINUX_PACKET_TYPE=Packet type
+MAC_LINUX_PACKET_TYPE_UNICAST=Unicast
+MAC_LINUX_PACKET_TYPE_MUTICAST=Multicast
+MAC_LINUX_USER_OPTIONS=User Options
+MAC_LINUX_CARRY_VERSION=Carry version info
+MAC_LINUX_UPLOAD_IP=Upload IP address
+MAC_LINUX_BROADCAST_LOGOFF=Broadcast logoff
+MAC_LINUX_COMMON=:
+MAC_LINUX_AUTO_AUTH=Auto login
+MAC_LINUX_ReauthTimesStc=Retry times:
+MAC_LINUX_ReauthIntervalStc=Retry interval:
+MAC_LINUX_NoLimite=Unlimited
+MAC_LINUX_3Minutes=3 minutes
+MAC_LINUX_5Minutes=5 minutes
+MAC_LINUX_10Minutes=10 minutes
+MAC_LINUX_15Minutes=15 minutes
+MAC_LINUX_20Minutes=20 minutes
+MAC_LINUX_25Minutes=25 minutes
+MAC_LINUX_30Minutes=30 minutes
+MAC_LINUX_45Minutes=45 minutes
+MAC_LINUX_1hour=1 hour
+MAC_LINUX_2hours=2 hours
+MAC_LINUX_3hours=3 hours
+MAC_LINUX_4hours=4 hours
+MAC_LINUX_5hours=5 hours
+MAC_LINUX_SERVICE_TYPE=Service Type
+MAC_LINUX_REFRESH_IP=Auto-renew IP address after disconnected(&Z)
+MAC_LINUX_HOLD_ID=Hold IP address after disconnected(&H)
+MAC_LINUX_Default_ConName=My 802.1X Connection
+
+MAC_LINUX_LOGLEVEL=Log Level
+MAC_LINUX_LOGLEVEL_FATAL=FATAL
+MAC_LINUX_LOGLEVEL_ERROR=ERROR
+MAC_LINUX_LOGLEVEL_WARNING=WARNING
+MAC_LINUX_LOGLEVEL_INFO=INFO
+MAC_LINUX_LOGLEVEL_DEBUG=DEBUG
+MAC_LINUX_LOGLEVEL_DETAIL=DETAIL
+
+MAC_LINUX_FORBID_PAP=Disable 802.1X PAP Authentication
+
+MAC_LINUX_ABOUT=About
+MAC_LINUX_PROPERTY_GENERAL=General
+MAC_LINUX_PROPERTY_NETWORK=Network
+
+MAC_LINUX_CLIENTS_SETTING_DES=Client Settings
+
+MAC_LINUX_USER_STATUS=User Status
+MAC_LINUX_STATUS_CONNECED=Connected
+MAC_LINUX_STATUS_SLEEP=You are already offline. An automatic reconnection will occur when the network recovers.
+MAC_LINUX_START_TIME=Logged online at
+MAC_LINUX_ONLINE_DURATION=Online duration
+MAC_LINUX_SERVER_IP=Server IP
+MAC_LINUX_USER_IP=User IP
+MAC_LINUX_WkChkAutoCon=Connect after net restore
+MAC_LINUX_PgNetworkInputIp=Please input server IP.
+MAC_LINUX_PgNetworkInvalidIp=The IP you input is not valid.
+
+#### Operation resources #####
+MAC_LINUX_ERROR_TITLE=Error Message
+MAC_LINUX_NIC_INFO_ERROR=NIC information error, please restart iNode Client or contact network administrator.
+MAC_LINUX_CONN_DELETE_DETERMINE=Are you sure to delete the connection?
+MAC_LINUX_ComfirmExitClient=Confirm Client Exit
+MAC_LINUX_BeSureToExit=Are you sure to exit iNode Intelligent Client?
+
+### Error Massege #####################
+MAC_LINUX_ERROR_MSG_1=Please input connection name.
+MAC_LINUX_ERROR_MSG_2=Please input user name.
+MAC_LINUX_ERROR_MSG_3=Please input the password.
+MAC_LINUX_ERROR_MSG_4=Please select one connection.
+MAC_LINUX_ERROR_MSG_5=Something is wrong with the connection, please reselect one.
+MAC_LINUX_ERROR_MSG_6=Connection information is wrong, please reselect one.
+MAC_LINUX_ERROR_MSG_7=Please select one NIC.
+MAC_LINUX_ERROR_MSG_8=User name can not contain continuous spaces.
+MAC_LINUX_ERROR_MSG_9=The length of user name cannot exceed 97 bytes.
+MAC_LINUX_ERROR_MSG_10=Please input the RSA Key.
+MAC_LINUX_ERROR_MSG_11=The new password and confirm password do not match, please try again.
+MAC_LINUX_ERROR_MSG_12=The new password is the same with the old password, please try again.
+
+
+####### Authentication MSG #############
+MAC_LINUX_AUTHEN_CONNECT=Connecting to the network...
+MAC_LINUX_AUTHEN_BEGIN=Beginning authentication... 
+MAC_LINUX_AUTHEN_PASSWORD=Authenticating password...
+MAC_LINUX_AUTHEN_PASSED=You have passed the identity authentication
+MAC_LINUX_AUTHEN_START_SEC=Start security check session...
+MAC_LINUX_AUTHEN_SEC_RESULT=Security check result for your computer: 
+MAC_LINUX_AUTHEN_SEC_RESULT_PASS=Security check is passed.
+MAC_LINUX_AUTHEN_SEC_RESULT_FAILED=Security check failed, please contact administrator for details.
+MAC_LINUX_AUTHEN_SEC_NO_REQUEST=No request for security check.
+MAC_LINUX_AUTHEN_SEC_CHECK_FAILED=Does not meet security requirements and current connection will be cut off.
+MAC_LINUX_HANDSHAKE_TIMEOUT=Network timed out for the user is off line.
+MAC_LINUX_USER_LOG_OUT=User logged out.
+MAC_LINUX_USER_STATE_EXCEPTION=User's state exceptional.
+
+MAC_LINUX_RetryTimesPrompt=Performing authentication. Please wait...
+MAC_LINUX_RetryTimesPromptEnd= times.
+MAC_LINUX_NoResponseAndReauth=No authentication response is received. Authentication automatically starts after 
+MAC_LINUX_NoResponseAndReauthEnd=.
+
+MAC_LINUX_AUTHEN_SEC_FAIL_NOAV=No required AntiVirus software installed.
+MAC_LINUX_AUTHEN_SEC_FAIL_AVRUNERR=Current AntiVirus software is not running. 
+MAC_LINUX_AUTHEN_SEC_FAIL_AVVIRDEF=Current virus definition version is lower than the lowest version required.
+MAC_LINUX_AUTHEN_SEC_FAIL_AVENGDEF=Current virus scan engine version is lower than the lowest version required.
+
+MAC_LINUX_AUTHEN_SEC_FAIL_NOAS=No required AntiSpyware software installed.
+MAC_LINUX_AUTHEN_SEC_FAIL_ASRUNERR=Current AntiSpyware software is not running. 
+MAC_LINUX_AUTHEN_SEC_FAIL_ASDEF=Current definition version is lower than the lowest version required.
+MAC_LINUX_AUTHEN_SEC_FAIL_ASENGDEF=Current scan engine version is lower than the lowest version required.
+
+MAC_LINUX_AUTHEN_SEC_FAIL_NOAP=No required AntiPhishing software installed.
+MAC_LINUX_AUTHEN_SEC_FAIL_APNOAPPLICATED=Current AntiPhishing softeware is not enabled. 
+
+MAC_LINUX_AUTHEN_SEC_FAIL_NOFW=No required Firewall software installed.
+MAC_LINUX_AUTHEN_SEC_FAIL_FWNOENABLED=Current Firewall software is not enabled. 
+
+MAC_LINUX_AUTHEN_SEC_FAIL_NOHD=No required Harddisk Encryption software installed.
+
+
+MAC_LINUX_AUTHEN_SEC_FAIL_NOPM=No required Patch Management software installed.
+MAC_LINUX_AUTHEN_SEC_FAIL_PMNOENABLED=Current Patch Management software is not enabled. 
+
+MAC_LINUX_AUTHEN_CONNECT_CLOSED=Disconnecting from the network...
+MAC_LINUX_CONNECT_CLOSED=Connection closed.
+MAC_LINUX_AUTHEN_CONNECT_CLOSED_1=Network timed out. Disconnecting from the network...
+MAC_LINUX_AUTHEN_CONNECT_CLOSED_2=Received a logout request packet. Disconnecting from the network...
+
+MAC_LINUX_AUTHEN_CONNECT_FAILED=Connection failed.
+MAC_LINUX_AUTHEN_CONNECT_EXCEPTIONAL=Connection's state exceptional.
+MAC_LINUX_AUTHEN_DISCONNECT_FAILED=Disconnection failed.
+
+MAC_LINUX_AUTHEN_MSG_ERROR_1=A client is connecting or disconnecting network, please wait a moment...
+MAC_LINUX_AUTHEN_MSG_ERROR_2=The connection's state is not permitted to be disconnected.
+MAC_LINUX_AUTHEN_MSG_ERROR_3=The connection is already online.
+MAC_LINUX_AUTHEN_MSG_ERROR_4=A client can not be deleted with its or others connecting, disconnecting, connected or other spacial states.
+MAC_LINUX_AUTHEN_MSG_ERROR_5=A client can not be renamed with its or others connecting, disconnecting, connected or other spacial states.
+MAC_LINUX_AUTHEN_MSG_ERROR_6=Cannot rename this connection for a connection with the name you specified already exists.Please Specify a different connection name.
+
+MAC_LINUX_AUTHEN_TLS_FAIL=Client does not support certificate authentication

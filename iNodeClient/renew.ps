@@ -1,0 +1,90 @@
+#!/bin/sh
+
+OS_UBUNTU=`cat /etc/issue | grep 'Ubuntu'`
+OS_FEDORA=`cat /etc/issue | grep 'Fedora'`
+OS_ROCKY=`cat /etc/issue | grep 'Rocky'`
+##Rocky
+if [ "$OS_ROCKY" != "" ]
+then   
+    /etc/sysconfig/network-devices/ifdown $* > /dev/null 2>&1
+    /etc/sysconfig/network-devices/ifup $* > /dev/null 2>&1    
+    exit 0 
+fi
+
+##Ferora
+if [ "$OS_FEDORA" != "" ]
+then   
+    /sbin/ifconfig $* down > /dev/null 2>&1
+    /sbin/ifconfig $* up > /dev/null 2>&1    
+    exit 0 
+fi
+
+##Ubuntu
+if [ "$OS_UBUNTU" != "" ]
+then    
+    if test -e "/sbin/dhclient" 
+    then 
+        DhcpPid=`ps -ef|grep "/sbin/dhclient $*"|grep -v "grep"|awk '{print $2}'`        
+        if [ "$DhcpPid" != "" ]
+        then               
+            kill $DhcpPid > /dev/null 2>&1
+        fi
+    
+        Sec=0
+        while [ 1 ]
+        do
+            DhcpPid=`ps -ef|grep "/sbin/dhclient $*"|grep -v "grep"|awk '{print $2}'`
+            if [ "$DhcpPid" != "" ]
+            then
+                sleep 1
+                Sec=`expr $Sec + 1`            
+	        if [ "$Sec" -gt 9 ]
+	        then
+	            break
+	        fi
+	    else
+	        break
+            fi   
+        done
+    
+        /sbin/dhclient $* > /dev/null 2>&1
+        
+        DhcpPid=`ps -ef|grep "/sbin/dhclient $*"|grep -v "grep"|awk '{print $2}'`
+        if [ "$DhcpPid" != "" ]
+        then                       
+            kill "$DhcpPid" > /dev/null 2>&1
+        fi
+    fi    
+    exit 0
+fi
+
+##Redhat
+if test -e "/sbin/dhclient" 
+then 
+    IfExist=`ps awx -o command|awk '{print $1}'|awk -F/ '{print $NF}'|grep -x dhclient`
+    if [ "$IfExist" != "" ]
+    then
+        killall -9 dhclient > /dev/null 2>&1
+    fi
+    
+    Sec=0
+    while [ 1 ]
+    do
+        IfExist=`ps awx -o command|awk '{print $1}'|awk -F/ '{print $NF}'|grep -x dhclient`
+        if [ "$IfExist" != "" ]
+        then
+            sleep 1
+            Sec=`expr $Sec + 1`            
+	    if [ "$Sec" -gt 9 ]
+	    then
+	        break
+	    fi
+	else
+	    break
+        fi   
+    done
+    
+    /sbin/dhclient $* > /dev/null 2>&1
+    killall -9 dhclient > /dev/null 2>&1
+fi
+

@@ -1,0 +1,16 @@
+﻿凝思磐石6.0安装iNode说明：
+
+在凝思磐石6.0系统安装iNode前需要先安装32位gtk库，32位gtk库的位置在：凝思磐石操作系统的安装光盘中。
+具体路径为：系统光盘\pool\main\i\ia32-libs-gtk\ia32-libs-gtk_20120102_amd64.deb
+
+安装iNode前需要先安装ia32-libs-gtk_20120102_amd64.deb
+
+安装ia32-libs-gtk_20120102_amd64.deb方法：
+1. 将ia32-libs-gtk_20120102_amd64.deb拷贝到凝思磐石系统
+2. 打开终端输入su root, 回车，输入root密码
+3. 转到ia32-libs-gtk_20120102_amd64.deb所在目录
+4. 输入dpkg -i ia32-libs-gtk_20120102_amd64.deb, 回车, 完成32位gtk库的安装。
+5. 可以安装iNode了
+
+
+注意，安装iNode也需要root权限! 终端先输入su root获取权限后再安装iNode。

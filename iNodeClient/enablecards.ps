@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if [ -r "/etc/sysconfig/network-scripts" ]
+then
+cd /etc/sysconfig/network-scripts
+fi
+
+#Rocky OS
+if [ -r "/etc/sysconfig/network-devices" ]
+then
+cd /etc/sysconfig/network-devices
+fi
+
+for x in eth0 eth1 eth2 eth3 eth4 eth5 eth6 eth7
+do
+  if [ -e "ifcfg-$x" ]
+  then
+    ifconfig $x up > /dev/null 2>&1
+  fi
+done
+
+

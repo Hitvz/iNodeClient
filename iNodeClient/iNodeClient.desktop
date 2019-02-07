@@ -1,0 +1,8 @@
+[Desktop Entry]
+BinaryPattern=iNodeClient;
+MimeType=
+Name=iNodeClient
+Exec="@INSTALL_PATH/iNodeClient.sh"
+Icon=@INSTALL_PATH/resource/iNodeClient.png
+Type=Application
+Terminal=0
