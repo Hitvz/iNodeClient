@@ -35,3 +35,4 @@ iNodeClient_64(自动安装版.tar.gz 64位版本
 
 iNodeClient_64_15.9.tar.gz 64位适配15.9.1
 
+直接下载tarPack里面的压缩包就好了。clone很慢的
