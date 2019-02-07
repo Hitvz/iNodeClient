@@ -28,6 +28,7 @@ iNodeClient_64_15.9.tar.gz为暂时适配了15.9.1
 ---
 
 现在将打包的tar文件放到tarPack文件夹下：
+
 iNdoeClient_32(deepin-ubuntu适配版.tar.gz 15.4之前的32位
 
 iNodeClient_64(自动安装版.tar.gz 64位版本
