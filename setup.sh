@@ -6,6 +6,8 @@ echo "当前路径：$filepath"
 
 sudo dpkg -i ./lib/libpng12-0_1.2.54-1ubuntu1_amd64.deb
 sudo apt-get install libncurses5
+sudo apt-get install chkconfig -y
+sudo apt-get install libpangox-1.0-0 -y
 
 if [ ! -d "/usr/iNodeClient" ] ; then
 	echo "正在复制文件\n"
